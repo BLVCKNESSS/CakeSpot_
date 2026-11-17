@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catalogue gâteaux | Cake Spot Douala</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../styles/catalogue.css" />
+  <link rel="icon" type="image/png" href="../images/logo.png" />
+  <meta name="theme-color" content="#3d1f0d" />
+  <meta name="description" content="Découvrez le catalogue Cake Spot : gâteaux d’anniversaire, cakes, cupcakes, bento cakes et gâteaux de mariage personnalisés à Douala." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Cake Spot" />
+  <meta property="og:title" content="Catalogue de gâteaux Cake Spot à Douala" />
+  <meta property="og:description" content="Découvrez le catalogue Cake Spot : gâteaux d’anniversaire, cakes, cupcakes, bento cakes et gâteaux de mariage personnalisés à Douala." />
+  <meta property="og:image" content="../images/logo.png" />
+  <meta name="keywords" content="catalogue gâteaux Douala, gâteau mariage Douala, gâteau anniversaire, cupcakes, bento cake, cake personnalisé" />
+  <meta name="robots" content="index, follow" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Catalogue de gâteaux Cake Spot à Douala" />
+  <meta name="twitter:description" content="Découvrez le catalogue Cake Spot : gâteaux d’anniversaire, cakes, cupcakes, bento cakes et gâteaux de mariage personnalisés à Douala." />
+  <meta name="twitter:image" content="../images/logo.png" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Bakery","name":"Cake Spot","description":"Pâtisserie artisanale à Douala spécialisée dans les gâteaux sur mesure.","telephone":"+237686019392","address":{"@type":"PostalAddress","addressLocality":"Douala","addressCountry":"CM"},"areaServed":"Douala","servesCuisine":"Pâtisserie","priceRange":"FCFA"}</script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <a href="../index.html" class="logo">
+      <img src="../images/logo.png" alt="Cake Spot" class="logo-image" /><span class="logo-wordmark">Cake<strong>Spot</strong></span>
+    </a>
+    <nav class="nav-desktop">
+      <a href="../index.html" class="nav-link">Accueil</a>
+      <a href="../Pages/Apropos.html" class="nav-link">À propos</a>
+      <a href="../Pages/Catalogue.html" class="nav-link active">Catalogue</a>
+      <a href="../Pages/contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="cart-btn" id="cartToggle" onclick="toggleCart()">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="menu-toggle" id="menuToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="../index.html">Accueil</a>
+    <a href="./Apropos.html">À propos</a>
+    <a href="./Catalogue.html">Catalogue</a>
+    <a href="./contact.html">Contact</a>
+    <a href="https://wa.me/+237686019392" class="wa-link"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+  </div>
+
+  <!-- CATALOGUE HERO -->
+  <div class="cat-hero">
+    <div class="cat-hero-bg">
+      <img src="../images/optimized/IMG_2830.webp" alt="Catalogue" />
+      <div class="cat-hero-overlay"></div>
+    </div>
+    <div class="cat-hero-content">
+      <p class="section-tag">Nos Créations</p>
+      <h1>Catalogue</h1>
+      <p>Choisissez parmi notre sélection artisanale, chaque gâteau est fait avec amour.</p>
+    </div>
+  </div>
+
+  <div class="catalogue-seo-intro">
+    <p><strong>Gâteaux artisanaux à Douala, faits pour vos moments précieux.</strong> Explorez nos créations personnalisées et commandez facilement par WhatsApp.</p>
+  </div>
+
+  <!-- FILTER BAR -->
+  <div class="filter-bar">
+    <div class="filter-inner">
+      <div class="filter-cats" id="filterCats">
+        <button class="filter-btn active" data-cat="Tous">Tous</button>
+        <button class="filter-btn" data-cat="Anniversaire">Anniversaire</button>
+        <button class="filter-btn" data-cat="Cakes">Cakes</button>
+        <button class="filter-btn" data-cat="Cupcakes">Cupcakes</button>
+        <button class="filter-btn" data-cat="Gateaux_de_marriage">Mariage</button>
+        <button class="filter-btn" data-cat="Bento">Bento</button>
+      </div>
+      <div class="filter-count" id="filterCount">76 créations · page 1/7</div>
+    </div>
+  </div>
+
+  <!-- PRODUCTS GRID -->
+  <section class="products-section">
+    <div class="products-grid" id="productsGrid">
+      <!-- Generated by JS -->
+    </div>
+    <nav class="pagination" id="pagination" aria-label="Pagination du catalogue"></nav>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <strong>CakeSpot</strong>
+        <p>Pâtisserie artisanale à Douala, Cameroun.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <a href="../index.html">Accueil</a>
+        <a href="./Apropos.html">À propos</a>
+        <a href="./Catalogue.html">Catalogue</a>
+        <a href="./contact.html">Contact</a>
+      </div>
+      <div class="footer-social">
+        <h4>Nous suivre</h4>
+        <div class="social-icons">
+          <a href="https://chat.whatsapp.com/CBqBLxDlNcEDeykTWFo2zk" class="soc wa" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" class="soc fb"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" class="soc ig"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 CakeSpot. Tous droits réservés.</p></div>
+  </footer>
+
+  <!-- CART PANEL -->
+  <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+  <div class="cart-panel" id="cartPanel">
+    <div class="cart-header">
+      <h3><i class="fa-solid fa-bag-shopping"></i> Mon Panier</h3>
+      <button onclick="toggleCart()"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer" id="cartFooter" style="display:none">
+      <div class="cart-total">
+        <span>Total estimé</span>
+        <strong id="cartTotal">0 Frs</strong>
+      </div>
+      <p class="cart-note">* Les prix exacts sont confirmés lors de la commande</p>
+      <button class="btn-whatsapp" onclick="sendToWhatsApp()">
+        <i class="fa-brands fa-whatsapp"></i> Commander via WhatsApp
+      </button>
+    </div>
+  </div>
+
+  <!-- PRODUCT DETAIL MODAL -->
+  <div class="modal-overlay" id="modalOverlay" onclick="closeModal()"></div>
+  <div class="modal" id="productModal">
+    <button class="modal-close" onclick="closeModal()"><i class="fa-solid fa-xmark"></i></button>
+    <div class="modal-content" id="modalContent"></div>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
+
+  <script src="../JS/main.js"></script>
+  <script src="../JS/catalogue-config.js"></script>
+  <script src="../JS/catalogue.js"></script>
+</body>
+</html>

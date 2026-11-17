@@ -1,0 +1,20 @@
+{
+  "routes": [
+    {
+      "path": "/",
+      "title": "Cake Spot — Pâtisserie artisanale"
+    },
+    {
+      "path": "/Pages/Catalogue.html",
+      "title": "Catalogue — Cake Spot"
+    },
+    {
+      "path": "/Pages/Apropos.html",
+      "title": "À propos — Cake Spot"
+    },
+    {
+      "path": "/Pages/contact.html",
+      "title": "Contact — Cake Spot"
+    }
+  ]
+}

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cake Spot | Gâteaux sur mesure à Douala</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles/main.css" />
+  <link rel="icon" type="image/png" href="./images/logo.png" />
+  <meta name="theme-color" content="#3d1f0d" />
+  <meta name="description" content="Cake Spot crée des gâteaux, cupcakes et bento cakes artisanaux sur mesure à Douala pour anniversaires, mariages et cadeaux gourmands." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Cake Spot" />
+  <meta property="og:title" content="Cake Spot | Pâtisserie artisanale à Douala" />
+  <meta property="og:description" content="Cake Spot crée des gâteaux, cupcakes et bento cakes artisanaux sur mesure à Douala pour anniversaires, mariages et cadeaux gourmands." />
+  <meta property="og:image" content="./images/logo.png" />
+  <meta name="keywords" content="pâtisserie Douala, gâteau anniversaire Douala, cake sur mesure, cupcakes Douala, bento cake Douala" />
+  <meta name="robots" content="index, follow" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cake Spot | Pâtisserie artisanale à Douala" />
+  <meta name="twitter:description" content="Cake Spot crée des gâteaux, cupcakes et bento cakes artisanaux sur mesure à Douala pour anniversaires, mariages et cadeaux gourmands." />
+  <meta name="twitter:image" content="./images/logo.png" />
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Bakery","name":"Cake Spot","description":"Pâtisserie artisanale à Douala spécialisée dans les gâteaux sur mesure.","telephone":"+237686019392","address":{"@type":"PostalAddress","addressLocality":"Douala","addressCountry":"CM"},"areaServed":"Douala","servesCuisine":"Pâtisserie","priceRange":"FCFA"}</script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <a href="./index.html" class="logo">
+      <img src="./images/logo.png" alt="Cake Spot" class="logo-image" /><span class="logo-wordmark">Cake<strong>Spot</strong></span>
+    </a>
+    <nav class="nav-desktop">
+      <a href="./index.html" class="nav-link active">Accueil</a>
+      <a href="./Pages/Apropos.html" class="nav-link">À propos</a>
+      <a href="./Pages/Catalogue.html" class="nav-link">Catalogue</a>
+      <a href="./Pages/contact.html" class="nav-link">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="cart-btn" id="cartToggle" onclick="toggleCart()">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="menu-toggle" id="menuToggle">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobileNav">
+    <a href="./index.html">Accueil</a>
+    <a href="./Pages/Apropos.html">À propos</a>
+    <a href="./Pages/Catalogue.html">Catalogue</a>
+    <a href="./Pages/contact.html">Contact</a>
+    <a href="https://wa.me/+237686019392" class="wa-link"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="./images/optimized/IMG_2829.webp" alt="Cake Spot" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-tag">Pâtisserie Artisanale · Douala</p>
+      <h1 class="hero-title">L'Art du<br /><em>Gâteau</em><br />Fait Main</h1>
+      <p class="hero-desc">Chaque création raconte une histoire de passion, de saveurs et d'excellence artisanale.</p>
+      <div class="hero-actions">
+        <a href="./Pages/Catalogue.html" class="btn-primary">Voir notre catalogue <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="https://wa.me/+237686019392?text=Bonjour, je souhaite commander un gâteau." class="btn-ghost"><i class="fa-brands fa-whatsapp"></i> Nous contacter</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Défiler</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- CATÉGORIES -->
+  <section class="categories-section">
+    <div class="section-header">
+      <p class="section-tag">Nos Spécialités</p>
+      <h2>Explorez Nos Délices</h2>
+    </div>
+    <div class="categories-grid">
+      <div class="cat-card" onclick="window.location.href='./Pages/Catalogue.html?cat=Cupcakes'">
+        <img src="./images/optimized/cupcake3.webp" alt="Cupcakes" />
+        <div class="cat-overlay">
+          <h3>Cupcakes</h3>
+          <p>Dès 500 Frs l'unité</p>
+          <span>Découvrir →</span>
+        </div>
+      </div>
+      <div class="cat-card" onclick="window.location.href='./Pages/Catalogue.html?cat=Cakes'">
+        <img src="./images/optimized/cake5.webp" alt="Cakes" />
+        <div class="cat-overlay">
+          <h3>Cakes</h3>
+          <p>Dès 2 500 Frs</p>
+          <span>Découvrir →</span>
+        </div>
+      </div>
+      <div class="cat-card" onclick="window.location.href='./Pages/Catalogue.html?cat=Anniversaire'">
+        <img src="./images/optimized/WhatsApp Image 2026-11-16 at 12.04.25.webp" alt="Gâteaux d'anniversaire" />
+        <div class="cat-overlay">
+          <h3>Anniversaire</h3>
+          <p>Créations personnalisées</p>
+          <span>Découvrir →</span>
+        </div>
+      </div>
+      <div class="cat-card" onclick="window.location.href='./Pages/Catalogue.html?cat=Gateaux_de_marriage'">
+        <img src="./images/optimized/etage10.webp" alt="Mariage" />
+        <div class="cat-overlay">
+          <h3>Gâteaux de Mariage</h3>
+          <p>Dès 150 000 Frs</p>
+          <span>Découvrir →</span>
+        </div>
+      </div>
+      <div class="cat-card" onclick="window.location.href='./Pages/Catalogue.html?cat=Bento'">
+        <img src="./images/optimized/IMG_2823.webp" alt="Bento" />
+        <div class="cat-overlay">
+          <h3>Bento Cakes</h3>
+          <p>Sur mesure</p>
+          <span>Découvrir →</span>
+        </div>
+      </div>
+    </div>
+    <div class="center-link">
+      <a href="./Pages/Catalogue.html" class="btn-outline">Voir tout le catalogue <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <!-- MISSION -->
+  <section class="mission-section">
+    <div class="mission-img">
+      <img src="./images/optimized/image_commentaire.webp" alt="Notre mission" />
+      <div class="mission-quote">
+        <i class="fa-solid fa-quote-left"></i>
+        <p>"Chaque bouchée est un voyage gustatif, un véritable plaisir pour les yeux et les papilles."</p>
+        <span>— Rayol B., client fidèle</span>
+      </div>
+    </div>
+    <div class="mission-text">
+      <p class="section-tag">Notre Histoire</p>
+      <h2>Notre Mission :<br />Régaler Vos Sens</h2>
+      <p>Nous croyons que chaque gâteau raconte une histoire unique, faite de saveurs et de créativité. Notre engagement envers la qualité artisanale garantit des créations qui émerveillent.</p>
+      <div class="stats-row">
+        <div class="stat">
+          <strong>2023</strong>
+          <span>Fondé</span>
+        </div>
+        <div class="stat">
+          <strong>150+</strong>
+          <span>Gâteaux réalisés</span>
+        </div>
+        <div class="stat">
+          <strong>300+</strong>
+          <span>Clients satisfaits</span>
+        </div>
+      </div>
+      <a href="https://wa.me/+237686019392?text=Bonjour Cake Spot, je souhaite vous contacter." class="btn-primary"><i class="fa-brands fa-whatsapp"></i> Contactez-nous</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <strong>CakeSpot</strong>
+        <p>Pâtisserie artisanale à Douala, Cameroun. Commandez vos créations sur mesure.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <a href="./index.html">Accueil</a>
+        <a href="./Pages/Apropos.html">À propos</a>
+        <a href="./Pages/Catalogue.html">Catalogue</a>
+        <a href="./Pages/contact.html">Contact</a>
+      </div>
+      <div class="footer-social">
+        <h4>Nous suivre</h4>
+        <div class="social-icons">
+          <a href="https://chat.whatsapp.com/CBqBLxDlNcEDeykTWFo2zk" class="soc wa" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" class="soc fb"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" class="soc ig"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 CakeSpot. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- CART PANEL -->
+  <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+  <div class="cart-panel" id="cartPanel">
+    <div class="cart-header">
+      <h3><i class="fa-solid fa-bag-shopping"></i> Mon Panier</h3>
+      <button onclick="toggleCart()"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty">
+        <i class="fa-solid fa-cake-candles"></i>
+        <p>Votre panier est vide</p>
+        <a href="./Pages/Catalogue.html">Parcourir le catalogue</a>
+      </div>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none">
+      <div class="cart-total">
+        <span>Total estimé</span>
+        <strong id="cartTotal">0 Frs</strong>
+      </div>
+      <p class="cart-note">* Les prix exacts sont confirmés lors de la commande</p>
+      <button class="btn-whatsapp" onclick="sendToWhatsApp()">
+        <i class="fa-brands fa-whatsapp"></i> Commander via WhatsApp
+      </button>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
+
+  <script src="./JS/main.js"></script>
+</body>
+</html>
