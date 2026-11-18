@@ -1,18 +1,4 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "index.html",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    { "src": "/Pages/(.*)", "dest": "/Pages/$1" },
-    { "src": "/images/(.*)", "dest": "/images/$1" },
-    { "src": "/JS/(.*)",     "dest": "/JS/$1" },
-    { "src": "/styles/(.*)", "dest": "/styles/$1" },
-    { "src": "/public/(.*)", "dest": "/public/$1" },
-    { "src": "/",            "dest": "/index.html" },
-    { "src": "/(.*)",        "dest": "/$1" }
-  ]
+  "outputDirectory": ".",
+  "framework": null
 }
