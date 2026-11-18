@@ -36,7 +36,7 @@ let produits = [
   {
     id: 'cup4', nom: 'Cupcake Tropical', categorie: 'Cupcakes',
     img: '../images/optimized/cupcake4.webp',
-    prix: '1 000 Frs l\'unité', prixNum: 1000, note: 4,4,
+    prix: '1 000 Frs l\'unité', prixNum: 1000, note: 4,
     desc: 'Explosion de saveurs tropicales dans un cupcake moelleux. Mangue, noix de coco et ananas se mélangent à merveille.',
     saveurs: ['Mangue-Coco', 'Ananas', 'Passion', 'Goyave'],
     infos: { Taille: 'Standard (8cm)', Portions: '1 personne', Délai: '24h', Conservation: '2-3 jours' },
