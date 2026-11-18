@@ -18,10 +18,10 @@ let produits = [
   {
     id: 'cup2', nom: 'Cupcake Prestige', categorie: 'Cupcakes',
     img: '../images/optimized/cupcake7.webp',
-    prix: '100 Frs l\'unité', prixNum: 100, note: 4,
+    prix: '150 Frs l\'unité', prixNum: 150, note: 4,
     desc: 'Version premium avec décoration élaborée, crème beurre artisanale et garnitures gourmandes. Un vrai chef-d\'œuvre en miniature.',
     saveurs: ['Chocolat Noir', 'Caramel Beurre Salé', 'Framboise', 'Café'],
-    infos: { Taille: 'Grand (10cm)', Portions: '1-2 personnes', Délai: '24-48h', Conservation: '2-3 jours' },
+    infos: { Taille: 'Grand (10cm)', Portions: '1 personne', Délai: '24-48h', Conservation: '2-3 jours' },
     details: 'Cupcake prestige — saveur au choix'
   },
   {
@@ -36,7 +36,7 @@ let produits = [
   {
     id: 'cup4', nom: 'Cupcake Tropical', categorie: 'Cupcakes',
     img: '../images/optimized/cupcake4.webp',
-    prix: '500 Frs l\'unité', prixNum: 500, note: 4,
+    prix: '1 000 Frs l\'unité', prixNum: 1000, note: 4,4,
     desc: 'Explosion de saveurs tropicales dans un cupcake moelleux. Mangue, noix de coco et ananas se mélangent à merveille.',
     saveurs: ['Mangue-Coco', 'Ananas', 'Passion', 'Goyave'],
     infos: { Taille: 'Standard (8cm)', Portions: '1 personne', Délai: '24h', Conservation: '2-3 jours' },
@@ -45,7 +45,7 @@ let produits = [
   {
     id: 'cup5', nom: 'Cupcake Chocolat', categorie: 'Cupcakes',
     img: '../images/optimized/cupcake5.webp',
-    prix: '500 Frs l\'unité', prixNum: 500, note: 4,
+    prix: '1000 Frs l\'unité', prixNum: 1000, note: 4,
     desc: 'Un cupcake tout chocolat pour les amateurs de cacao. Ganache fondante et base intense en chocolat belge.',
     saveurs: ['Chocolat Noir', 'Chocolat au Lait', 'Chocolat Blanc', 'Nutella'],
     infos: { Taille: 'Standard (8cm)', Portions: '1 personne', Délai: '24h', Conservation: '3 jours' },
@@ -56,8 +56,8 @@ let produits = [
     img: '../images/optimized/WhatsApp Image 2026-05-27 at 00.02.54.webp',
     prix: '12 000 Frs', prixNum: 12000, note: 4,
     desc: 'Gâteau d’anniversaire généreux au chocolat et à la noix de coco, décoré de fruits, de gourmandises et d’un message personnalisé.',
-    saveurs: ['Vanille', 'Citron', 'Coco', 'Nature'],
-    infos: { Taille: 'Standard (7cm)', Portions: '1 personne', Délai: '24h', Conservation: '3-4 jours' },
+    saveurs: ['Vanille', 'Citron', 'Coco', 'Chocolat'],
+    infos: { Taille: 'Standard (7cm)', Portions: '10-15 personnes', Délai: '24h', Conservation: '3-4 jours' },
     details: 'Gâteau anniversaire — décoration chocolat et message personnalisables'
   },
 
@@ -66,10 +66,10 @@ let produits = [
   {
     id: 'cake1', nom: 'Cake Fondant', categorie: 'Cakes',
     img: '../images/optimized/cake1.webp',
-    prix: '3 000 Frs', prixNum: 3000, note: 4,
+    prix: '3 500 Frs', prixNum: 3500, note: 4,
     desc: 'Un cake tendre et fondant, recouvert d\'une couche de glaçage satiné. Parfait pour un goûter ou un cadeau gourmand.',
     saveurs: ['Citron', 'Vanille', 'Amande', 'Orange'],
-    infos: { Taille: 'Moyen (20cm)', Portions: '6-8 personnes', Délai: '24-48h', Conservation: '4-5 jours' },
+    infos: { Taille: 'Moyen (20cm)', Portions: '8-10 personnes', Délai: '24-48h', Conservation: '4-5 jours' },
     details: 'Cake fondant — saveur au choix'
   },
   {
@@ -78,7 +78,7 @@ let produits = [
     prix: '4 000 Frs', prixNum: 4000, note: 5,
     desc: 'Notre cake premium aux ingrédients soigneusement sélectionnés. Texture aérée, saveurs intenses et décoration soignée.',
     saveurs: ['Chocolat Belge', 'Caramel', 'Fruits Rouges', 'Noisette'],
-    infos: { Taille: 'Grand (24cm)', Portions: '10-12 personnes', Délai: '48h', Conservation: '4-5 jours' },
+    infos: { Taille: 'Grand (20cm)', Portions: '8-10 personnes', Délai: '48h', Conservation: '4-5 jours' },
     details: 'Cake premium — saveur au choix'
   },
   {
@@ -87,7 +87,7 @@ let produits = [
     prix: '3 500 Frs', prixNum: 3500, note: 4,
     desc: 'Notre cake spécial avec un design artistique unique. Idéal pour les événements d\'exception et les moments qui méritent le meilleur.',
     saveurs: ['Chocolat Blanc Framboises', 'Pistache-Rose', 'Citron Pavot'],
-    infos: { Taille: 'Grand (24-26cm)', Portions: '10-14 personnes', Délai: '72h minimum', Conservation: '4 jours' },
+    infos: { Taille: 'Grand (20cm)', Portions: '8-10 personnes', Délai: '72h minimum', Conservation: '4 jours' },
     details: 'Cake spécial — design personnalisé'
   },
   {
@@ -129,7 +129,7 @@ let produits = [
   {
     id: 'cake9', nom: 'Cake Chocolat Intense', categorie: 'Cakes',
     img: '../images/optimized/cake9.webp',
-    prix: '3 500 Frs', prixNum: 3500, note: 5,
+    prix: '4 500 Frs', prixNum: 4500, note: 5,
     desc: 'Pour les vrais amateurs de chocolat : un cake dense, intense et fondant, recouvert d\'une ganache brillante. Irrésistible.',
     saveurs: ['Chocolat Noir 70%', 'Chocolat au Lait', 'Double Chocolat'],
     infos: { Taille: 'Grand (22cm)', Portions: '8-10 personnes', Délai: '24-48h', Conservation: '4 jours' },
@@ -138,7 +138,7 @@ let produits = [
   {
     id: 'cake10', nom: 'Cake Noix de Coco', categorie: 'Cakes',
     img: '../images/optimized/cake10.webp',
-    prix: '3 000 Frs', prixNum: 3000, note: 4,
+    prix: '4 500 Frs', prixNum: 4500, note: 4,
     desc: 'Cake à la noix de coco râpée avec un cœur crémeux et une décoration copeaux de coco grillés. Exotique et savoureux.',
     saveurs: ['Coco Pure', 'Coco & Citron', 'Coco & Ananas'],
     infos: { Taille: 'Moyen (20cm)', Portions: '6-8 personnes', Délai: '24h', Conservation: '3-4 jours' },
@@ -156,7 +156,7 @@ let produits = [
   {
     id: 'cake12', nom: 'Cake Caramel Noisette', categorie: 'Cakes',
     img: '../images/optimized/cake12.webp',
-    prix: '5 000 Frs', prixNum: 5000, note: 5,
+    prix: '6 000 Frs', prixNum: 6000, note: 5,
     desc: 'Cake garni d\'un praliné noisette maison et d\'un caramel coulant, recouvert d\'une crème beurre satinée. Un pur délice.',
     saveurs: ['Caramel & Noisette', 'Caramel & Chocolat', 'Praliné Pur'],
     infos: { Taille: 'Grand (22cm)', Portions: '8-10 personnes', Délai: '48h', Conservation: '4 jours' },
@@ -175,7 +175,7 @@ let produits = [
   {
     id: 'cake14', nom: 'Cake Drip Oreo & Vanille', categorie: 'Cakes',
     img: '../images/optimized/WhatsApp Image 2026-05-26 at 23.38.18 (1).webp',
-    prix: '11 000 Frs', prixNum: 11000, note: 4,
+    prix: '12 000 Frs', prixNum: 12000, note: 4,
     desc: 'Base crème vanille avec socle d\'Oreo broyé, ganache chocolat en drip et macarons dorés en décoration. Message personnalisé possible.',
     saveurs: ['Vanille & Chocolat', 'Chocolat Noir'],
     infos: { Taille: 'Moyen (20cm)', Portions: '8-10 personnes', Délai: '48h', Conservation: '3-4 jours' },
@@ -184,16 +184,16 @@ let produits = [
   {
     id: 'cake15', nom: 'Cake Choco Total', categorie: 'Cakes',
     img: '../images/optimized/WhatsApp Image 2026-05-27 at 00.02.54 (1).webp',
-    prix: '18 000 Frs', prixNum: 18000, note: 5,
+    prix: '20 000 Frs', prixNum: 20000, note: 5,
     desc: 'Pour les vrais amateurs de chocolat ! Cake entièrement chocolat avec crème au beurre chocolatée, ganache miroir et bonbons chocolatés.',
     saveurs: ['Chocolat Noir Intense', 'Chocolat au Lait', 'Double Chocolat'],
-    infos: { Taille: 'Grand (22cm)', Portions: '10-12 personnes', Délai: '48h', Conservation: '4 jours' },
+    infos: { Taille: 'Grand (22cm)', Portions: '10-15 personnes', Délai: '48h', Conservation: '4 jours' },
     details: 'Cake Choco Total — personnalisation possible'
   },
   {
     id: 'cake16', nom: 'Cake Drip Blanc & Chocolat', categorie: 'Cakes',
     img: '../images/optimized/WhatsApp Image 2026-05-27 at 00.02.57.webp',
-    prix: '10 000 Frs', prixNum: 10000, note: 4,
+    prix: '12 000 Frs', prixNum: 12000, note: 4,
     desc: 'Élégant cake blanc recouvert d\'une ganache chocolat en drip avec Oreos et rouleaux gaufrés. Minimaliste et gourmand à la fois.',
     saveurs: ['Vanille & Chocolat', 'Fraise & Chocolat', 'Caramel & Chocolat'],
     infos: { Taille: 'Moyen (20cm)', Portions: '8-10 personnes', Délai: '48h', Conservation: '3-4 jours' },
@@ -202,7 +202,7 @@ let produits = [
   {
     id: 'cake17', nom: 'Cake Bicolore Choco-Vanille', categorie: 'Cakes',
     img: '../images/optimized/WhatsApp Image 2026-05-27 at 00.02.57 (1).webp',
-    prix: '10 000 Frs', prixNum: 10000, note: 4,
+    prix: '12 000 Frs', prixNum: 12000, note: 4,
     desc: 'Design unique mi-chocolat mi-vanille, avec cerises rouges et ganache chocolat d\'un côté, et crème chantilly de l\'autre.',
     saveurs: ['Chocolat & Vanille', 'Chocolat & Fraise'],
     infos: { Taille: 'Grand (22cm)', Portions: '10-12 personnes', Délai: '48-72h', Conservation: '3 jours' },
@@ -220,7 +220,7 @@ let produits = [
   {
     id: 'cake19', nom: 'Cake Chocolat Drip Or', categorie: 'Cakes',
     img: '../images/optimized/WhatsApp Image 2026-05-27 at 00.02.58.webp',
-    prix: '12 000 Frs', prixNum: 12000, note: 4,
+    prix: '10 000 Frs', prixNum: 10000, note: 4,
     desc: 'Cake ganache chocolat brillant, décoré de perles dorées et de feuilles d\'or comestible. Luxueux, gourmand et absolument inoubliable.',
     saveurs: ['Chocolat Noir', 'Chocolat & Caramel', 'Chocolat & Noisette'],
     infos: { Taille: 'Grand (22cm)', Portions: '10-12 personnes', Délai: '48h', Conservation: '4 jours' },
@@ -304,7 +304,7 @@ let produits = [
   {
     id: 'ann6', nom: 'Cake Paw Patrol Tower', categorie: 'Anniversaire',
     img: '../images/optimized/WhatsApp Image 2026-05-26 at 23.38.15 (1).webp',
-    prix: '12 000 Frs', prixNum: 12000, note: 5,
+    prix: '14 000 Frs', prixNum: 14000, note: 5,
     desc: 'Version haute et impressive du cake Paw Patrol avec tour en sucre, toutes les figurines et perles de couleur. Le gâteau qui fait le wow.',
     saveurs: ['Vanille', 'Caramel', 'Chocolat', 'Fraise'],
     infos: { Taille: 'Haut (22cm x 15cm)', Portions: '12-16 personnes', Délai: '72h minimum', Conservation: '3 jours' },
@@ -480,7 +480,7 @@ let produits = [
   },
   {
     id: 'new1', nom: 'Cake Noir & Blanc', categorie: 'Cakes',
-    img: '../images/optimized/WhatsApp Image 2026-11-16 at 11.59.41.webp', prix: 'Sur devis', prixNum: 0, note: 5,
+    img: '../images/optimized/WhatsApp Image 2026-11-16 at 11.59.41.webp', prix: '12 000 Frs', prixNum: 12000, note: 5,
     desc: 'Une création Cake Spot récemment ajoutée à notre collection. Contactez-nous pour choisir les saveurs et la personnalisation.',
     saveurs: ['Vanille', 'Chocolat', 'Fraise', 'Caramel'],
     infos: { Taille: 'Sur mesure', Portions: 'Selon le format', Délai: '48h minimum', Conservation: '3-4 jours' },
@@ -489,7 +489,7 @@ let produits = [
 
   {
     id: 'new2', nom: 'Gâteau Anniversaire Personnalisé 2', categorie: 'Anniversaire',
-    img: '../images/optimized/WhatsApp Image 2026-11-16 at 12.02.13.webp', prix: 'Sur devis', prixNum: 0, note: 5,
+    img: '../images/optimized/WhatsApp Image 2026-11-16 at 12.02.13.webp', prix: '30 000 Frs', prixNum: 30000, note: 5,
     desc: 'Une création Cake Spot récemment ajoutée à notre collection. Contactez-nous pour choisir les saveurs et la personnalisation.',
     saveurs: ['Vanille', 'Chocolat', 'Fraise', 'Caramel'],
     infos: { Taille: 'Sur mesure', Portions: 'Selon le format', Délai: '48h minimum', Conservation: '3-4 jours' },
@@ -498,7 +498,7 @@ let produits = [
 
   {
     id: 'new3', nom: 'Gâteau Anniversaire Personnalisé 3', categorie: 'Anniversaire',
-    img: '../images/optimized/WhatsApp Image 2026-11-16 at 12.04.25.webp', prix: 'Sur devis', prixNum: 0, note: 5,
+    img: '../images/optimized/WhatsApp Image 2026-11-16 at 12.04.25.webp', prix: '18 000 Frs', prixNum: 18000, note: 5,
     desc: 'Une création Cake Spot récemment ajoutée à notre collection. Contactez-nous pour choisir les saveurs et la personnalisation.',
     saveurs: ['Vanille', 'Chocolat', 'Fraise', 'Caramel'],
     infos: { Taille: 'Sur mesure', Portions: 'Selon le format', Délai: '48h minimum', Conservation: '3-4 jours' },
@@ -507,7 +507,7 @@ let produits = [
 
   {
     id: 'new4', nom: 'Cake Drip Blanc & Chocolat', categorie: 'Cakes',
-    img: '../images/optimized/WhatsApp Image 2026-11-16 at 12.05.09.webp', prix: 'Sur devis', prixNum: 0, note: 5,
+    img: '../images/optimized/WhatsApp Image 2026-11-16 at 12.05.09.webp', prix: '8 000 Frs', prixNum: 8000, note: 5,
     desc: 'Une création Cake Spot récemment ajoutée à notre collection. Contactez-nous pour choisir les saveurs et la personnalisation.',
     saveurs: ['Vanille', 'Chocolat', 'Fraise', 'Caramel'],
     infos: { Taille: 'Sur mesure', Portions: 'Selon le format', Délai: '48h minimum', Conservation: '3-4 jours' },
@@ -516,7 +516,7 @@ let produits = [
 
   {
     id: 'new5', nom: 'Gâteau Anniversaire Personnalisé 5', categorie: 'Anniversaire',
-    img: '../images/optimized/WhatsApp Image 2026-11-16 at 12.06.33.webp', prix: 'Sur devis', prixNum: 0, note: 5,
+    img: '../images/optimized/WhatsApp Image 2026-11-16 at 12.06.33.webp', prix: '10 000 Frs', prixNum: 10000, note: 5,
     desc: 'Une création Cake Spot récemment ajoutée à notre collection. Contactez-nous pour choisir les saveurs et la personnalisation.',
     saveurs: ['Vanille', 'Chocolat', 'Fraise', 'Caramel'],
     infos: { Taille: 'Sur mesure', Portions: 'Selon le format', Délai: '48h minimum', Conservation: '3-4 jours' },
@@ -525,7 +525,7 @@ let produits = [
 
   {
     id: 'new6', nom: 'Donuts Gourmands', categorie: 'Cakes',
-    img: '../images/optimized/WhatsApp Image 2026-11-16 at 12.54.45.webp', prix: 'Sur devis', prixNum: 0, note: 5,
+    img: '../images/optimized/WhatsApp Image 2026-11-16 at 12.54.45.webp', prix: '3 500 Frs', prixNum: 3500, note: 5,
     desc: 'Une création Cake Spot récemment ajoutée à notre collection. Contactez-nous pour choisir les saveurs et la personnalisation.',
     saveurs: ['Vanille', 'Chocolat', 'Fraise', 'Caramel'],
     infos: { Taille: 'Sur mesure', Portions: 'Selon le format', Délai: '48h minimum', Conservation: '3-4 jours' },
@@ -534,7 +534,7 @@ let produits = [
 
   {
     id: 'new7', nom: 'Cake Vertical Fleuri', categorie: 'Cakes',
-    img: '../images/optimized/WhatsApp Image 2026-11-16 at 12.54.47.webp', prix: 'Sur devis', prixNum: 0, note: 5,
+    img: '../images/optimized/WhatsApp Image 2026-11-16 at 12.54.47.webp', prix: '200 000 Frs', prixNum: 200000, note: 5,
     desc: 'Une création Cake Spot récemment ajoutée à notre collection. Contactez-nous pour choisir les saveurs et la personnalisation.',
     saveurs: ['Vanille', 'Chocolat', 'Fraise', 'Caramel'],
     infos: { Taille: 'Sur mesure', Portions: 'Selon le format', Délai: '48h minimum', Conservation: '3-4 jours' },
@@ -543,7 +543,7 @@ let produits = [
 
   {
     id: 'new8', nom: 'Cake Lettre Personnalisé', categorie: 'Cakes',
-    img: '../images/optimized/WhatsApp Image 2026-11-16 at 12.54.48.webp', prix: 'Sur devis', prixNum: 0, note: 5,
+    img: '../images/optimized/WhatsApp Image 2026-11-16 at 12.54.48.webp', prix: '20 000 Frs', prixNum: 20000, note: 5,
     desc: 'Une création Cake Spot récemment ajoutée à notre collection. Contactez-nous pour choisir les saveurs et la personnalisation.',
     saveurs: ['Vanille', 'Chocolat', 'Fraise', 'Caramel'],
     infos: { Taille: 'Sur mesure', Portions: 'Selon le format', Délai: '48h minimum', Conservation: '3-4 jours' },
@@ -552,7 +552,7 @@ let produits = [
 
   {
     id: 'new9', nom: 'Cake Chocolat Drip', categorie: 'Cakes',
-    img: '../images/optimized/WhatsApp Image 2026-11-16 at 12.54.51.webp', prix: 'Sur devis', prixNum: 0, note: 5,
+    img: '../images/optimized/WhatsApp Image 2026-11-16 at 12.54.51.webp', prix: '10 000 Frs', prixNum: 10000, note: 5,
     desc: 'Une création Cake Spot récemment ajoutée à notre collection. Contactez-nous pour choisir les saveurs et la personnalisation.',
     saveurs: ['Vanille', 'Chocolat', 'Fraise', 'Caramel'],
     infos: { Taille: 'Sur mesure', Portions: 'Selon le format', Délai: '48h minimum', Conservation: '3-4 jours' },
@@ -570,7 +570,7 @@ let produits = [
 
   {
     id: 'new11', nom: 'Gâteau Anniversaire Personnalisé 11', categorie: 'Anniversaire',
-    img: '../images/optimized/WhatsApp Image 2026-11-16 at 12.54.57.webp', prix: 'Sur devis', prixNum: 0, note: 5,
+    img: '../images/optimized/WhatsApp Image 2026-11-16 at 12.54.57.webp', prix: '25 000 Frs', prixNum: 25000, note: 5,
     desc: 'Une création Cake Spot récemment ajoutée à notre collection. Contactez-nous pour choisir les saveurs et la personnalisation.',
     saveurs: ['Vanille', 'Chocolat', 'Fraise', 'Caramel'],
     infos: { Taille: 'Sur mesure', Portions: 'Selon le format', Délai: '48h minimum', Conservation: '3-4 jours' },
@@ -579,7 +579,7 @@ let produits = [
 
   {
     id: 'new12', nom: 'Gâteau Anniversaire Personnalisé 12', categorie: 'Anniversaire',
-    img: '../images/optimized/WhatsApp Image 2026-11-16 at 13.06.43.webp', prix: 'Sur devis', prixNum: 0, note: 5,
+    img: '../images/optimized/WhatsApp Image 2026-11-16 at 13.06.43.webp', prix: '14 000 Frs', prixNum: 14000, note: 5,
     desc: 'Une création Cake Spot récemment ajoutée à notre collection. Contactez-nous pour choisir les saveurs et la personnalisation.',
     saveurs: ['Vanille', 'Chocolat', 'Fraise', 'Caramel'],
     infos: { Taille: 'Sur mesure', Portions: 'Selon le format', Délai: '48h minimum', Conservation: '3-4 jours' },
@@ -588,7 +588,7 @@ let produits = [
 
   {
     id: 'new13', nom: 'Gâteau Anniversaire Personnalisé 13', categorie: 'Anniversaire',
-    img: '../images/optimized/WhatsApp Image 2026-11-16 at 13.06.50.webp', prix: 'Sur devis', prixNum: 0, note: 5,
+    img: '../images/optimized/WhatsApp Image 2026-11-16 at 13.06.50.webp', prix: '15 000 Frs', prixNum: 15000, note: 5,
     desc: 'Une création Cake Spot récemment ajoutée à notre collection. Contactez-nous pour choisir les saveurs et la personnalisation.',
     saveurs: ['Vanille', 'Chocolat', 'Fraise', 'Caramel'],
     infos: { Taille: 'Sur mesure', Portions: 'Selon le format', Délai: '48h minimum', Conservation: '3-4 jours' },
@@ -597,7 +597,7 @@ let produits = [
 
   {
     id: 'new14', nom: 'Gâteau Anniversaire Personnalisé 14', categorie: 'Anniversaire',
-    img: '../images/optimized/WhatsApp Image 2026-11-16 at 13.06.58.webp', prix: 'Sur devis', prixNum: 0, note: 5,
+    img: '../images/optimized/WhatsApp Image 2026-11-16 at 13.06.58.webp', prix: '10 000 Frs', prixNum: 10000, note: 5,
     desc: 'Une création Cake Spot récemment ajoutée à notre collection. Contactez-nous pour choisir les saveurs et la personnalisation.',
     saveurs: ['Vanille', 'Chocolat', 'Fraise', 'Caramel'],
     infos: { Taille: 'Sur mesure', Portions: 'Selon le format', Délai: '48h minimum', Conservation: '3-4 jours' },
@@ -606,7 +606,7 @@ let produits = [
 
   {
     id: 'new15', nom: 'Gâteau Anniversaire Personnalisé 15', categorie: 'Anniversaire',
-    img: '../images/optimized/WhatsApp Image 2026-11-16 at 13.07.00.webp', prix: 'Sur devis', prixNum: 0, note: 5,
+    img: '../images/optimized/WhatsApp Image 2026-11-16 at 13.07.00.webp', prix: '25 000 Frs', prixNum: 25000, note: 5,
     desc: 'Une création Cake Spot récemment ajoutée à notre collection. Contactez-nous pour choisir les saveurs et la personnalisation.',
     saveurs: ['Vanille', 'Chocolat', 'Fraise', 'Caramel'],
     infos: { Taille: 'Sur mesure', Portions: 'Selon le format', Délai: '48h minimum', Conservation: '3-4 jours' },
@@ -615,7 +615,7 @@ let produits = [
 
   {
     id: 'new16', nom: 'Gâteau Anniversaire Personnalisé 16', categorie: 'Anniversaire',
-    img: '../images/optimized/WhatsApp Image 2026-11-16 at 13.07.09.webp', prix: 'Sur devis', prixNum: 0, note: 5,
+    img: '../images/optimized/WhatsApp Image 2026-11-16 at 13.07.09.webp', prix: '12 000 Frs', prixNum: 12000, note: 5,
     desc: 'Une création Cake Spot récemment ajoutée à notre collection. Contactez-nous pour choisir les saveurs et la personnalisation.',
     saveurs: ['Vanille', 'Chocolat', 'Fraise', 'Caramel'],
     infos: { Taille: 'Sur mesure', Portions: 'Selon le format', Délai: '48h minimum', Conservation: '3-4 jours' },
@@ -624,7 +624,7 @@ let produits = [
 
   {
     id: 'new17', nom: 'Gâteau Anniversaire Personnalisé 17', categorie: 'Anniversaire',
-    img: '../images/optimized/WhatsApp Image 2026-11-16 at 13.07.23.webp', prix: 'Sur devis', prixNum: 0, note: 5,
+    img: '../images/optimized/WhatsApp Image 2026-11-16 at 13.07.23.webp', prix: '25 000 Frs', prixNum: 25000, note: 5,
     desc: 'Une création Cake Spot récemment ajoutée à notre collection. Contactez-nous pour choisir les saveurs et la personnalisation.',
     saveurs: ['Vanille', 'Chocolat', 'Fraise', 'Caramel'],
     infos: { Taille: 'Sur mesure', Portions: 'Selon le format', Délai: '48h minimum', Conservation: '3-4 jours' },
@@ -633,7 +633,7 @@ let produits = [
 
   {
     id: 'new18', nom: 'Gâteau Anniversaire Personnalisé 18', categorie: 'Anniversaire',
-    img: '../images/optimized/WhatsApp Image 2026-11-16 at 13.07.26.webp', prix: 'Sur devis', prixNum: 0, note: 5,
+    img: '../images/optimized/WhatsApp Image 2026-11-16 at 13.07.26.webp', prix: '7 000 Frs', prixNum: 7000, note: 5,
     desc: 'Une création Cake Spot récemment ajoutée à notre collection. Contactez-nous pour choisir les saveurs et la personnalisation.',
     saveurs: ['Vanille', 'Chocolat', 'Fraise', 'Caramel'],
     infos: { Taille: 'Sur mesure', Portions: 'Selon le format', Délai: '48h minimum', Conservation: '3-4 jours' },
@@ -642,7 +642,7 @@ let produits = [
 
   {
     id: 'new19', nom: 'Gâteau Anniversaire Personnalisé 19', categorie: 'Anniversaire',
-    img: '../images/optimized/WhatsApp Image 2026-11-16 at 13.07.30.webp', prix: 'Sur devis', prixNum: 0, note: 5,
+    img: '../images/optimized/WhatsApp Image 2026-11-16 at 13.07.30.webp', prix: '13 000 Frs', prixNum: 13000, note: 5,
     desc: 'Une création Cake Spot récemment ajoutée à notre collection. Contactez-nous pour choisir les saveurs et la personnalisation.',
     saveurs: ['Vanille', 'Chocolat', 'Fraise', 'Caramel'],
     infos: { Taille: 'Sur mesure', Portions: 'Selon le format', Délai: '48h minimum', Conservation: '3-4 jours' },
@@ -651,7 +651,7 @@ let produits = [
 
   {
     id: 'new20', nom: 'Gâteau Anniversaire Personnalisé 20', categorie: 'Anniversaire',
-    img: '../images/optimized/WhatsApp Image 2026-11-16 at 13.07.39.webp', prix: 'Sur devis', prixNum: 0, note: 5,
+    img: '../images/optimized/WhatsApp Image 2026-11-16 at 13.07.39.webp', prix: '10 000 Frs', prixNum: 10000, note: 5,
     desc: 'Une création Cake Spot récemment ajoutée à notre collection. Contactez-nous pour choisir les saveurs et la personnalisation.',
     saveurs: ['Vanille', 'Chocolat', 'Fraise', 'Caramel'],
     infos: { Taille: 'Sur mesure', Portions: 'Selon le format', Délai: '48h minimum', Conservation: '3-4 jours' },
@@ -660,7 +660,7 @@ let produits = [
 
   {
     id: 'new21', nom: 'Gâteau Anniversaire Personnalisé 21', categorie: 'Anniversaire',
-    img: '../images/optimized/WhatsApp Image 2026-11-16 at 13.07.44.webp', prix: 'Sur devis', prixNum: 0, note: 5,
+    img: '../images/optimized/WhatsApp Image 2026-11-16 at 13.07.44.webp', prix: '20 000 Frs', prixNum: 20000, note: 5,
     desc: 'Une création Cake Spot récemment ajoutée à notre collection. Contactez-nous pour choisir les saveurs et la personnalisation.',
     saveurs: ['Vanille', 'Chocolat', 'Fraise', 'Caramel'],
     infos: { Taille: 'Sur mesure', Portions: 'Selon le format', Délai: '48h minimum', Conservation: '3-4 jours' },
@@ -669,7 +669,7 @@ let produits = [
 
   {
     id: 'new22', nom: 'Cake Chocolat Premium', categorie: 'Cakes',
-    img: '../images/optimized/WhatsApp Image 2026-11-16 at 13.07.46.webp', prix: 'Sur devis', prixNum: 0, note: 5,
+    img: '../images/optimized/WhatsApp Image 2026-11-16 at 13.07.46.webp', prix: '20 000 Frs', prixNum: 20000, note: 5,
     desc: 'Une création Cake Spot récemment ajoutée à notre collection. Contactez-nous pour choisir les saveurs et la personnalisation.',
     saveurs: ['Vanille', 'Chocolat', 'Fraise', 'Caramel'],
     infos: { Taille: 'Sur mesure', Portions: 'Selon le format', Délai: '48h minimum', Conservation: '3-4 jours' },
@@ -678,7 +678,7 @@ let produits = [
 
   {
     id: 'new23', nom: 'Gâteau Anniversaire Personnalisé 23', categorie: 'Anniversaire',
-    img: '../images/optimized/WhatsApp Image 2026-11-16 at 13.07.48.webp', prix: 'Sur devis', prixNum: 0, note: 5,
+    img: '../images/optimized/WhatsApp Image 2026-11-16 at 13.07.48.webp', prix: '25 000 Frs', prixNum: 25000, note: 5,
     desc: 'Une création Cake Spot récemment ajoutée à notre collection. Contactez-nous pour choisir les saveurs et la personnalisation.',
     saveurs: ['Vanille', 'Chocolat', 'Fraise', 'Caramel'],
     infos: { Taille: 'Sur mesure', Portions: 'Selon le format', Délai: '48h minimum', Conservation: '3-4 jours' },
@@ -687,7 +687,7 @@ let produits = [
 
   {
     id: 'new24', nom: 'Gâteau Anniversaire Personnalisé 24', categorie: 'Anniversaire',
-    img: '../images/optimized/WhatsApp Image 2026-11-16 at 13.07.49.webp', prix: 'Sur devis', prixNum: 0, note: 5,
+    img: '../images/optimized/WhatsApp Image 2026-11-16 at 13.07.49.webp', prix: '25 000 Frs', prixNum: 25000, note: 5,
     desc: 'Une création Cake Spot récemment ajoutée à notre collection. Contactez-nous pour choisir les saveurs et la personnalisation.',
     saveurs: ['Vanille', 'Chocolat', 'Fraise', 'Caramel'],
     infos: { Taille: 'Sur mesure', Portions: 'Selon le format', Délai: '48h minimum', Conservation: '3-4 jours' },
@@ -695,7 +695,7 @@ let produits = [
   },
   {
     id: 'archive1', nom: 'Gâteau Anniversaire Personnalisé 1', categorie: 'Anniversaire',
-    img: '../images/optimized/WhatsApp Image 2025-04-14 at 14.32.57_90a1076c.webp', prix: 'Sur devis', prixNum: 0, note: 5,
+    img: '../images/optimized/WhatsApp Image 2025-04-14 at 14.32.57_90a1076c.webp', prix: '12 000 Frs', prixNum: 12000, note: 5,
     desc: 'Une création signature de Cake Spot, pensée pour les célébrations et les commandes personnalisées.',
     saveurs: ['Vanille', 'Chocolat', 'Fruits rouges'],
     infos: { Taille: 'Sur mesure', Portions: 'Selon le format', Délai: '48h minimum', Conservation: '3-4 jours' },
@@ -791,7 +791,12 @@ function renderGrid() {
   grid.innerHTML = pageItems.map((p, i) => `
     <article class="product-card" data-product-id="${p.id}" tabindex="0" role="button" aria-label="Voir ${p.nom}" style="--card-delay:${i*0.045}s">
       ${p.note === 5 ? '<div class="product-card-badge">★ Top</div>' : ''}
-      <div class="product-card-img"><img src="${p.img}" alt="${p.nom}" loading="${i < 4 ? 'eager' : 'lazy'}" ${i < 4 ? 'fetchpriority="high"' : ''} decoding="async"></div>
+      <div class="product-card-img">
+        <img src="${p.img}" alt="${p.nom}" loading="${i < 4 ? 'eager' : 'lazy'}" ${i < 4 ? 'fetchpriority="high"' : ''} decoding="async">
+        <button class="img-zoom-btn" data-zoom-img="${p.img}" data-zoom-name="${p.nom}" aria-label="Voir l'image en grand" title="Voir en grand">
+          <i class="fa-solid fa-magnifying-glass-plus"></i>
+        </button>
+      </div>
       <div class="product-card-body">
         <div class="product-card-stars" aria-label="Note ${p.note} sur 5">${stars(p.note)}</div>
         <div class="product-card-name">${p.nom}</div>
@@ -908,6 +913,31 @@ function orderDirectWhatsApp(id) {
   window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(msg)}`, '_blank');
 }
 
+// ===== LIGHTBOX =====
+function openLightbox(src, name) {
+  const overlay = document.getElementById('lightboxOverlay');
+  const img     = document.getElementById('lightboxImg');
+  const caption = document.getElementById('lightboxCaption');
+  if (!overlay || !img) return;
+  img.src = src;
+  img.alt = name;
+  if (caption) caption.textContent = name;
+  overlay.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  const overlay = document.getElementById('lightboxOverlay');
+  if (!overlay) return;
+  overlay.classList.remove('open');
+  document.body.style.overflow = '';
+  // Reset src après la transition pour éviter le flash
+  setTimeout(() => {
+    const img = document.getElementById('lightboxImg');
+    if (img) img.src = '';
+  }, 300);
+}
+
 // ===== INIT =====
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.filter-btn').forEach(btn => {
@@ -921,6 +951,8 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   const grid = document.getElementById('productsGrid');
   grid?.addEventListener('click', (event) => {
+    const zoom = event.target.closest('[data-zoom-img]');
+    if (zoom) { event.stopPropagation(); openLightbox(zoom.dataset.zoomImg, zoom.dataset.zoomName); return; }
     const add = event.target.closest('[data-add-id]');
     if (add) { quickAdd(add.dataset.addId); return; }
     const card = event.target.closest('[data-product-id]');
@@ -944,4 +976,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   renderGrid();
   hydrateCatalogueFromManager();
+
+  // Lightbox close events
+  document.getElementById('lightboxClose')?.addEventListener('click', closeLightbox);
+  document.getElementById('lightboxOverlay')?.addEventListener('click', (e) => {
+    if (e.target === e.currentTarget || e.target.id === 'lightboxOverlay') closeLightbox();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      if (document.getElementById('lightboxOverlay')?.classList.contains('open')) closeLightbox();
+    }
+  });
 });

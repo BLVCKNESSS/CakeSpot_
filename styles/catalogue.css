@@ -318,3 +318,69 @@
 .catalogue-seo-intro { max-width: 1180px; margin: 0 auto; padding: .9rem 1rem 0; color: var(--text-light); font-size: .86rem; text-align: center; }
 .catalogue-seo-intro strong { color: var(--brown); }
 @media (min-width: 601px) { .catalogue-seo-intro { padding-top: 1.35rem; font-size: .92rem; } }
+
+/* ===== LIGHTBOX ===== */
+.product-card-img { position: relative; }
+.img-zoom-btn {
+  position: absolute; bottom: 8px; right: 8px; z-index: 3;
+  width: 34px; height: 34px; border-radius: 50%;
+  background: rgba(61,31,13,0.65); backdrop-filter: blur(4px);
+  border: none; color: white; font-size: 0.85rem;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s, transform 0.2s, background 0.2s;
+}
+.product-card:hover .img-zoom-btn { opacity: 1; }
+.img-zoom-btn:hover { background: var(--rose); transform: scale(1.1); }
+
+.lightbox-overlay {
+  position: fixed; inset: 0; z-index: 2000;
+  background: rgba(0,0,0,0.92);
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.lightbox-overlay.open {
+  opacity: 1; pointer-events: all;
+}
+.lightbox-inner {
+  position: relative;
+  max-width: min(92vw, 900px);
+  max-height: 90vh;
+  display: flex; align-items: center; justify-content: center;
+  transform: scale(0.92);
+  transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.lightbox-overlay.open .lightbox-inner {
+  transform: scale(1);
+}
+.lightbox-img {
+  max-width: 100%; max-height: 85vh;
+  object-fit: contain;
+  border-radius: var(--radius);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  display: block;
+}
+.lightbox-close {
+  position: fixed; top: 1.2rem; right: 1.2rem;
+  width: 44px; height: 44px; border-radius: 50%;
+  background: rgba(255,255,255,0.15); backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: white; font-size: 1.1rem;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+.lightbox-close:hover { background: var(--rose); transform: scale(1.1); }
+.lightbox-caption {
+  position: absolute; bottom: -2.6rem; left: 0; right: 0;
+  text-align: center;
+  color: rgba(255,255,255,0.75); font-size: 0.88rem;
+  font-family: 'Playfair Display', serif; font-style: italic;
+}
+
+/* Sur mobile : le bouton zoom toujours visible */
+@media (max-width: 600px) {
+  .img-zoom-btn { opacity: 1; width: 30px; height: 30px; font-size: 0.75rem; }
+}
