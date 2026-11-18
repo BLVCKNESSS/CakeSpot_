@@ -1,0 +1,22 @@
+{
+  "name": "Cake Spot — Pâtisserie artisanale à Douala",
+  "short_name": "Cake Spot",
+  "lang": "fr",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fdf8f3",
+  "theme_color": "#3d1f0d",
+  "icons": [
+    {
+      "src": "images/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "images/logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

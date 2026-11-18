@@ -1,224 +1,261 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cake Spot | Gâteaux sur mesure à Douala</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="./styles/main.css" />
-  <link rel="icon" type="image/png" href="./images/logo.png" />
-  <meta name="theme-color" content="#3d1f0d" />
-  <meta name="description" content="Cake Spot crée des gâteaux, cupcakes et bento cakes artisanaux sur mesure à Douala pour anniversaires, mariages et cadeaux gourmands." />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Cake Spot" />
-  <meta property="og:title" content="Cake Spot | Pâtisserie artisanale à Douala" />
-  <meta property="og:description" content="Cake Spot crée des gâteaux, cupcakes et bento cakes artisanaux sur mesure à Douala pour anniversaires, mariages et cadeaux gourmands." />
-  <meta property="og:image" content="./images/logo.png" />
-  <meta name="keywords" content="pâtisserie Douala, gâteau anniversaire Douala, cake sur mesure, cupcakes Douala, bento cake Douala" />
-  <meta name="robots" content="index, follow" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Cake Spot | Pâtisserie artisanale à Douala" />
-  <meta name="twitter:description" content="Cake Spot crée des gâteaux, cupcakes et bento cakes artisanaux sur mesure à Douala pour anniversaires, mariages et cadeaux gourmands." />
-  <meta name="twitter:image" content="./images/logo.png" />
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Bakery","name":"Cake Spot","description":"Pâtisserie artisanale à Douala spécialisée dans les gâteaux sur mesure.","telephone":"+237686019392","address":{"@type":"PostalAddress","addressLocality":"Douala","addressCountry":"CM"},"areaServed":"Douala","servesCuisine":"Pâtisserie","priceRange":"FCFA"}</script>
+  <meta name="description" content="Cake Spot crée des gâteaux, cupcakes et bento cakes artisanaux sur mesure à Douala pour anniversaires, mariages et cadeaux gourmands.">
+  <link rel="canonical" href="https://cakespot-blue.vercel.app/">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#3d1f0d" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#16100c" media="(prefers-color-scheme: dark)">
+  <script src="./JS/theme.js"></script>
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="icon" type="image/png" sizes="48x48" href="./images/favicon-48.png">
+  <link rel="apple-touch-icon" href="./images/apple-touch-icon.png">
+  <link rel="manifest" href="./site.webmanifest">
+  <link rel="preload" href="./fonts/dm-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="./fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" href="./images/hero/bento-cake-fleuri-640.webp" imagesrcset="./images/hero/bento-cake-fleuri-640.webp 640w, ./images/hero/bento-cake-fleuri-828.webp 828w, ./images/hero/bento-cake-fleuri-1280.webp 1067w" imagesizes="100vw" fetchpriority="high">
+  <link rel="stylesheet" href="./styles/main.css">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Cake Spot">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:url" content="https://cakespot-blue.vercel.app/">
+  <meta property="og:title" content="Cake Spot | Pâtisserie artisanale à Douala">
+  <meta property="og:description" content="Cake Spot crée des gâteaux, cupcakes et bento cakes artisanaux sur mesure à Douala pour anniversaires, mariages et cadeaux gourmands.">
+  <meta property="og:image" content="https://cakespot-blue.vercel.app/images/og-cakespot.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Gâteau artisanal Cake Spot à Douala">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Cake Spot | Pâtisserie artisanale à Douala">
+  <meta name="twitter:description" content="Cake Spot crée des gâteaux, cupcakes et bento cakes artisanaux sur mesure à Douala pour anniversaires, mariages et cadeaux gourmands.">
+  <meta name="twitter:image" content="https://cakespot-blue.vercel.app/images/og-cakespot.jpg">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Bakery","@id":"https://cakespot-blue.vercel.app/#bakery","name":"Cake Spot","url":"https://cakespot-blue.vercel.app/","logo":"https://cakespot-blue.vercel.app/images/logo-512.png","image":["https://cakespot-blue.vercel.app/images/og-cakespot.jpg","https://cakespot-blue.vercel.app/images/optimized/etage10.webp","https://cakespot-blue.vercel.app/images/optimized/cake5.webp"],"description":"Pâtisserie artisanale à Douala spécialisée dans les gâteaux sur mesure : anniversaires, mariages, cakes, cupcakes et bento cakes.","telephone":"+237686019392","email":"CakeSpot22@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Douala","addressRegion":"Littoral","addressCountry":"CM"},"areaServed":{"@type":"City","name":"Douala"},"servesCuisine":"Pâtisserie","priceRange":"500 – 280 000 FCFA","currenciesAccepted":"XAF","sameAs":["https://chat.whatsapp.com/CBqBLxDlNcEDeykTWFo2zk"],"contactPoint":[{"@type":"ContactPoint","telephone":"+237686019392","contactType":"customer service","availableLanguage":["French","English"]}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Cake Spot","url":"https://cakespot-blue.vercel.app/","inLanguage":"fr"}</script>
+  <script src="./JS/icons.js" defer></script>
+  <script src="./JS/main.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
 
-  <!-- HEADER -->
   <header class="header" id="header">
-    <a href="./index.html" class="logo">
-      <img src="./images/logo.png" alt="Cake Spot" class="logo-image" /><span class="logo-wordmark">Cake<strong>Spot</strong></span>
+    <a href="./index.html" class="logo" aria-label="Cake Spot — accueil">
+      <img src="./images/logo.webp" alt="" class="logo-image" width="64" height="96"><span class="logo-wordmark">Cake<strong>Spot</strong></span>
     </a>
-    <nav class="nav-desktop">
-      <a href="./index.html" class="nav-link active">Accueil</a>
+    <nav class="nav-desktop" aria-label="Navigation principale">
+      <a href="./index.html" class="nav-link active" aria-current="page">Accueil</a>
       <a href="./Pages/Apropos.html" class="nav-link">À propos</a>
       <a href="./Pages/Catalogue.html" class="nav-link">Catalogue</a>
       <a href="./Pages/contact.html" class="nav-link">Contact</a>
     </nav>
     <div class="header-actions">
-      <button class="cart-btn" id="cartToggle" onclick="toggleCart()">
-        <i class="fa-solid fa-bag-shopping"></i>
-        <span class="cart-count" id="cartCount">0</span>
+      <button type="button" class="theme-toggle" data-action="toggle-theme" aria-pressed="false" aria-label="Activer le thème sombre"><svg class="icon icon-moon" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/></svg><svg class="icon icon-sun" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z"/></svg></button>
+      <button type="button" class="cart-btn" data-action="open-cart" aria-haspopup="dialog" aria-controls="cartPanel" aria-label="Ouvrir le panier">
+        <svg class="icon icon-bag-shopping" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64v48H160V112zm-48 48H48c-26.5 0-48 21.5-48 48V416c0 53 43 96 96 96H352c53 0 96-43 96-96V208c0-26.5-21.5-48-48-48H336V112C336 50.1 285.9 0 224 0S112 50.1 112 112v48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+        <span class="cart-count" data-cart-count aria-hidden="true">0</span>
       </button>
-      <button class="menu-toggle" id="menuToggle">
+      <button type="button" class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-controls="mobileNav" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
-  <!-- MOBILE NAV -->
-  <div class="mobile-nav" id="mobileNav">
-    <a href="./index.html">Accueil</a>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Navigation mobile">
+    <a href="./index.html" aria-current="page">Accueil</a>
     <a href="./Pages/Apropos.html">À propos</a>
     <a href="./Pages/Catalogue.html">Catalogue</a>
     <a href="./Pages/contact.html">Contact</a>
-    <a href="https://wa.me/+237686019392" class="wa-link"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-  </div>
+    <a href="https://wa.me/237686019392" class="wa-link"><svg class="icon icon-whatsapp" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> WhatsApp</a>
+  </nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-bg">
-      <img src="./images/optimized/IMG_2829.webp" alt="Cake Spot" />
-      <div class="hero-overlay"></div>
-    </div>
-    <div class="hero-content">
-      <p class="hero-tag">Pâtisserie Artisanale · Douala</p>
-      <h1 class="hero-title">L'Art du<br /><em>Gâteau</em><br />Fait Main</h1>
-      <p class="hero-desc">Chaque création raconte une histoire de passion, de saveurs et d'excellence artisanale.</p>
-      <div class="hero-actions">
-        <a href="./Pages/Catalogue.html" class="btn-primary">Voir notre catalogue <i class="fa-solid fa-arrow-right"></i></a>
-        <a href="https://wa.me/+237686019392?text=Bonjour, je souhaite commander un gâteau." class="btn-ghost"><i class="fa-brands fa-whatsapp"></i> Nous contacter</a>
+  <main id="main">
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero-bg">
+        <img src="./images/hero/bento-cake-fleuri-640.webp" srcset="./images/hero/bento-cake-fleuri-640.webp 640w, ./images/hero/bento-cake-fleuri-828.webp 828w, ./images/hero/bento-cake-fleuri-1280.webp 1067w" sizes="100vw" width="1067" height="1600" alt="Bento cake fleuri décoré à la main par Cake Spot" fetchpriority="high">
+        <div class="hero-overlay"></div>
       </div>
-    </div>
-    <div class="hero-scroll">
-      <span>Défiler</span>
-      <div class="scroll-line"></div>
-    </div>
-  </section>
+      <div class="hero-content">
+        <p class="hero-tag">Pâtisserie artisanale · Douala</p>
+        <h1 class="hero-title" id="heroTitle">L’art du<br><em>gâteau</em><br>fait main</h1>
+        <p class="hero-desc">Chaque création raconte une histoire de passion, de saveurs et d’excellence artisanale.</p>
+        <div class="hero-actions">
+          <a href="./Pages/Catalogue.html" class="btn-primary">Voir notre catalogue <svg class="icon icon-arrow-right" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></a>
+          <a href="https://wa.me/237686019392?text=Bonjour%2C%20je%20souhaite%20commander%20un%20g%C3%A2teau." class="btn-ghost"><svg class="icon icon-whatsapp" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> Nous contacter</a>
+        </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true"><span>Défiler</span><div class="scroll-line"></div></div>
+    </section>
 
-  <!-- CATÉGORIES -->
-  <section class="categories-section">
-    <div class="section-header">
-      <p class="section-tag">Nos Spécialités</p>
-      <h2>Explorez Nos Délices</h2>
-    </div>
-    <div class="categories-grid">
-      <div class="cat-card" onclick="window.location.href='./Pages/Catalogue.html?cat=Cupcakes'">
-        <img src="./images/optimized/cupcake3.webp" alt="Cupcakes" />
-        <div class="cat-overlay">
-          <h3>Cupcakes</h3>
-          <p>Dès 500 Frs l'unité</p>
-          <span>Découvrir →</span>
-        </div>
-      </div>
-      <div class="cat-card" onclick="window.location.href='./Pages/Catalogue.html?cat=Cakes'">
-        <img src="./images/optimized/cake5.webp" alt="Cakes" />
-        <div class="cat-overlay">
-          <h3>Cakes</h3>
-          <p>Dès 2 500 Frs</p>
-          <span>Découvrir →</span>
-        </div>
-      </div>
-      <div class="cat-card" onclick="window.location.href='./Pages/Catalogue.html?cat=Anniversaire'">
-        <img src="./images/optimized/WhatsApp Image 2026-11-16 at 12.04.25.webp" alt="Gâteaux d'anniversaire" />
-        <div class="cat-overlay">
-          <h3>Anniversaire</h3>
-          <p>Créations personnalisées</p>
-          <span>Découvrir →</span>
-        </div>
-      </div>
-      <div class="cat-card" onclick="window.location.href='./Pages/Catalogue.html?cat=Gateaux_de_marriage'">
-        <img src="./images/optimized/etage10.webp" alt="Mariage" />
-        <div class="cat-overlay">
-          <h3>Gâteaux de Mariage</h3>
-          <p>Dès 150 000 Frs</p>
-          <span>Découvrir →</span>
-        </div>
-      </div>
-      <div class="cat-card" onclick="window.location.href='./Pages/Catalogue.html?cat=Bento'">
-        <img src="./images/optimized/IMG_2823.webp" alt="Bento" />
-        <div class="cat-overlay">
-          <h3>Bento Cakes</h3>
-          <p>Sur mesure</p>
-          <span>Découvrir →</span>
-        </div>
-      </div>
-    </div>
-    <div class="center-link">
-      <a href="./Pages/Catalogue.html" class="btn-outline">Voir tout le catalogue <i class="fa-solid fa-arrow-right"></i></a>
-    </div>
-  </section>
+    <ul class="perks" aria-label="Nos engagements">
+      <li class="perk" data-reveal><span class="perk-icon"><svg class="icon icon-cake-candles" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M86.4 5.5L61.8 47.6C58 54.1 56 61.6 56 69.2V72c0 22.1 17.9 40 40 40s40-17.9 40-40V69.2c0-7.6-2-15-5.8-21.6L105.6 5.5C103.6 2.1 100 0 96 0s-7.6 2.1-9.6 5.5zm128 0L189.8 47.6c-3.8 6.5-5.8 14-5.8 21.6V72c0 22.1 17.9 40 40 40s40-17.9 40-40V69.2c0-7.6-2-15-5.8-21.6L233.6 5.5C231.6 2.1 228 0 224 0s-7.6 2.1-9.6 5.5zM317.8 47.6c-3.8 6.5-5.8 14-5.8 21.6V72c0 22.1 17.9 40 40 40s40-17.9 40-40V69.2c0-7.6-2-15-5.8-21.6L361.6 5.5C359.6 2.1 356 0 352 0s-7.6 2.1-9.6 5.5L317.8 47.6zM128 176c0-17.7-14.3-32-32-32s-32 14.3-32 32v48c-35.3 0-64 28.7-64 64v71c8.3 5.2 18.1 9 28.8 9c13.5 0 27.2-6.1 38.4-13.4c5.4-3.5 9.9-7.1 13-9.7c1.5-1.3 2.7-2.4 3.5-3.1c.4-.4 .7-.6 .8-.8l.1-.1 0 0 0 0s0 0 0 0s0 0 0 0c3.1-3.2 7.4-4.9 11.9-4.8s8.6 2.1 11.6 5.4l0 0 0 0 .1 .1c.1 .1 .4 .4 .7 .7c.7 .7 1.7 1.7 3.1 3c2.8 2.6 6.8 6.1 11.8 9.5c10.2 7.1 23 13.1 36.3 13.1s26.1-6 36.3-13.1c5-3.5 9-6.9 11.8-9.5c1.4-1.3 2.4-2.3 3.1-3c.3-.3 .6-.6 .7-.7l.1-.1c3-3.5 7.4-5.4 12-5.4s9 2 12 5.4l.1 .1c.1 .1 .4 .4 .7 .7c.7 .7 1.7 1.7 3.1 3c2.8 2.6 6.8 6.1 11.8 9.5c10.2 7.1 23 13.1 36.3 13.1s26.1-6 36.3-13.1c5-3.5 9-6.9 11.8-9.5c1.4-1.3 2.4-2.3 3.1-3c.3-.3 .6-.6 .7-.7l.1-.1c2.9-3.4 7.1-5.3 11.6-5.4s8.7 1.6 11.9 4.8l0 0 0 0 0 0 .1 .1c.2 .2 .4 .4 .8 .8c.8 .7 1.9 1.8 3.5 3.1c3.1 2.6 7.5 6.2 13 9.7c11.2 7.3 24.9 13.4 38.4 13.4c10.7 0 20.5-3.9 28.8-9V288c0-35.3-28.7-64-64-64V176c0-17.7-14.3-32-32-32s-32 14.3-32 32v48H256V176c0-17.7-14.3-32-32-32s-32 14.3-32 32v48H128V176zM448 394.6c-8.5 3.3-18.2 5.4-28.8 5.4c-22.5 0-42.4-9.9-55.8-18.6c-4.1-2.7-7.8-5.4-10.9-7.8c-2.8 2.4-6.1 5-9.8 7.5C329.8 390 310.6 400 288 400s-41.8-10-54.6-18.9c-3.5-2.4-6.7-4.9-9.4-7.2c-2.7 2.3-5.9 4.7-9.4 7.2C201.8 390 182.6 400 160 400s-41.8-10-54.6-18.9c-3.7-2.6-7-5.2-9.8-7.5c-3.1 2.4-6.8 5.1-10.9 7.8C71.2 390.1 51.3 400 28.8 400c-10.6 0-20.3-2.2-28.8-5.4V480c0 17.7 14.3 32 32 32H416c17.7 0 32-14.3 32-32V394.6z"/></svg></span><p><strong>Fait main à Douala</strong><span>Ingrédients frais, recettes maison</span></p></li>
+      <li class="perk" data-reveal data-reveal-delay="1"><span class="perk-icon"><svg class="icon icon-star" viewBox="0 0 576 512" aria-hidden="true" focusable="false"><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg></span><p><strong>100 % personnalisable</strong><span>Saveurs, couleurs, message</span></p></li>
+      <li class="perk" data-reveal data-reveal-delay="2"><span class="perk-icon"><svg class="icon icon-location-dot" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg></span><p><strong>Livraison à Douala</strong><span>Ou retrait sur place</span></p></li>
+      <li class="perk" data-reveal data-reveal-delay="3"><span class="perk-icon"><svg class="icon icon-whatsapp" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></span><p><strong>Commande simple</strong><span>Panier envoyé sur WhatsApp</span></p></li>
+    </ul>
 
-  <!-- MISSION -->
-  <section class="mission-section">
-    <div class="mission-img">
-      <img src="./images/optimized/image_commentaire.webp" alt="Notre mission" />
-      <div class="mission-quote">
-        <i class="fa-solid fa-quote-left"></i>
-        <p>"Chaque bouchée est un voyage gustatif, un véritable plaisir pour les yeux et les papilles."</p>
-        <span>— Rayol B., client fidèle</span>
+    <section class="categories-section" aria-labelledby="catTitle">
+      <div class="section-header" data-reveal>
+        <p class="section-tag">Nos spécialités</p>
+        <h2 id="catTitle">Explorez nos délices</h2>
       </div>
-    </div>
-    <div class="mission-text">
-      <p class="section-tag">Notre Histoire</p>
-      <h2>Notre Mission :<br />Régaler Vos Sens</h2>
-      <p>Nous croyons que chaque gâteau raconte une histoire unique, faite de saveurs et de créativité. Notre engagement envers la qualité artisanale garantit des créations qui émerveillent.</p>
-      <div class="stats-row">
-        <div class="stat">
-          <strong>2023</strong>
-          <span>Fondé</span>
-        </div>
-        <div class="stat">
-          <strong>150+</strong>
-          <span>Gâteaux réalisés</span>
-        </div>
-        <div class="stat">
-          <strong>300+</strong>
-          <span>Clients satisfaits</span>
-        </div>
+      <div class="categories-grid">
+        <a class="cat-card" href="./Pages/Catalogue.html?cat=Cupcakes" data-reveal data-reveal-delay="0">
+          <img src="./images/thumbs/cupcake3.webp" alt="Cupcakes décorés Cake Spot" width="480" height="640" loading="lazy" decoding="async">
+          <div class="cat-overlay">
+            <h3>Cupcakes</h3>
+            <p>Dès 500 Frs l’unité</p>
+            <span>Découvrir <svg class="icon icon-arrow-right" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></span>
+          </div>
+        </a>
+        <a class="cat-card" href="./Pages/Catalogue.html?cat=Cakes" data-reveal data-reveal-delay="1">
+          <img src="./images/thumbs/cake5.webp" alt="Cake au chocolat fait maison" width="480" height="640" loading="lazy" decoding="async">
+          <div class="cat-overlay">
+            <h3>Cakes</h3>
+            <p>Dès 2 500 Frs</p>
+            <span>Découvrir <svg class="icon icon-arrow-right" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></span>
+          </div>
+        </a>
+        <a class="cat-card" href="./Pages/Catalogue.html?cat=Anniversaire" data-reveal data-reveal-delay="2">
+          <img src="./images/thumbs/gateau-anniversaire-personnalise-3.webp" alt="Gâteau d’anniversaire personnalisé" width="480" height="640" loading="lazy" decoding="async">
+          <div class="cat-overlay">
+            <h3>Anniversaire</h3>
+            <p>Créations personnalisées</p>
+            <span>Découvrir <svg class="icon icon-arrow-right" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></span>
+          </div>
+        </a>
+        <a class="cat-card" href="./Pages/Catalogue.html?cat=Gateaux_de_marriage" data-reveal data-reveal-delay="3">
+          <img src="./images/thumbs/etage10.webp" alt="Gâteau de mariage à étages" width="480" height="640" loading="lazy" decoding="async">
+          <div class="cat-overlay">
+            <h3>Gâteaux de mariage</h3>
+            <p>Dès 150 000 Frs</p>
+            <span>Découvrir <svg class="icon icon-arrow-right" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></span>
+          </div>
+        </a>
+        <a class="cat-card" href="./Pages/Catalogue.html?cat=Bento" data-reveal data-reveal-delay="4">
+          <img src="./images/thumbs/bento-cake-premium.webp" alt="Bento cake décoré à la main" width="480" height="640" loading="lazy" decoding="async">
+          <div class="cat-overlay">
+            <h3>Bento cakes</h3>
+            <p>Sur mesure</p>
+            <span>Découvrir <svg class="icon icon-arrow-right" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></span>
+          </div>
+        </a>
       </div>
-      <a href="https://wa.me/+237686019392?text=Bonjour Cake Spot, je souhaite vous contacter." class="btn-primary"><i class="fa-brands fa-whatsapp"></i> Contactez-nous</a>
-    </div>
-  </section>
+      <div class="center-link" data-reveal>
+        <a href="./Pages/Catalogue.html" class="btn-outline">Voir tout le catalogue <svg class="icon icon-arrow-right" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></a>
+      </div>
+    </section>
 
-  <!-- FOOTER -->
+    <section class="mission-section" aria-labelledby="missionTitle">
+      <div class="mission-img" data-reveal>
+        <img src="./images/thumbs/image_commentaire.webp" srcset="./images/thumbs/image_commentaire.webp 480w, ./images/optimized/image_commentaire.webp 1000w" sizes="(max-width: 900px) 92vw, 560px" alt="Gâteau Cake Spot présenté à un client" width="480" height="600" loading="lazy" decoding="async">
+        <blockquote class="mission-quote">
+          <svg class="icon icon-quote-left" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M0 216C0 149.7 53.7 96 120 96h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V320 288 216zm256 0c0-66.3 53.7-120 120-120h8c17.7 0 32 14.3 32 32s-14.3 32-32 32h-8c-30.9 0-56 25.1-56 56v8h64c35.3 0 64 28.7 64 64v64c0 35.3-28.7 64-64 64H320c-35.3 0-64-28.7-64-64V320 288 216z"/></svg>
+          <p>« Chaque bouchée est un voyage gustatif, un véritable plaisir pour les yeux et les papilles. »</p>
+          <cite>— Rayol B., client fidèle</cite>
+        </blockquote>
+      </div>
+      <div class="mission-text" data-reveal data-reveal-delay="1">
+        <p class="section-tag">Notre histoire</p>
+        <h2 id="missionTitle">Notre mission :<br>régaler vos sens</h2>
+        <p>Nous croyons que chaque gâteau raconte une histoire unique, faite de saveurs et de créativité. Notre engagement envers la qualité artisanale garantit des créations qui émerveillent.</p>
+        <div class="stats-row">
+          <p class="stat"><strong>2023</strong><span>Fondé</span></p>
+          <p class="stat"><strong>150+</strong><span>Gâteaux réalisés</span></p>
+          <p class="stat"><strong>300+</strong><span>Clients satisfaits</span></p>
+        </div>
+        <a href="https://wa.me/237686019392?text=Bonjour%20Cake%20Spot%2C%20je%20souhaite%20vous%20contacter." class="btn-primary"><svg class="icon icon-whatsapp" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> Contactez-nous</a>
+      </div>
+    </section>
+
+    <section class="cta-band" data-reveal aria-labelledby="ctaTitle">
+      <h2 id="ctaTitle">Un événement à fêter ?</h2>
+      <p>Anniversaire, mariage ou simple envie gourmande : composez votre panier et envoyez-le en un clic sur WhatsApp.</p>
+      <div class="cta-actions">
+        <a href="./Pages/Catalogue.html" class="btn-primary">Voir le catalogue <svg class="icon icon-arrow-right" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg></a>
+        <a href="https://wa.me/237686019392?text=Bonjour%20Cake%20Spot%2C%20je%20souhaite%20commander%20un%20g%C3%A2teau." class="btn-outline"><svg class="icon icon-whatsapp" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> Nous écrire</a>
+      </div>
+    </section>
+  </main>
+
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-brand">
-        <strong>CakeSpot</strong>
-        <p>Pâtisserie artisanale à Douala, Cameroun. Commandez vos créations sur mesure.</p>
+        <p class="footer-logo">Cake<span>Spot</span></p>
+        <p>Pâtisserie artisanale à Douala, Cameroun. Gâteaux sur mesure pour tous vos moments précieux.</p>
+        <p class="footer-contact">
+          <a href="tel:+237686019392">+237 686 019 392</a><br>
+          <a href="mailto:CakeSpot22@gmail.com">CakeSpot22@gmail.com</a>
+        </p>
       </div>
-      <div class="footer-links">
-        <h4>Navigation</h4>
-        <a href="./index.html">Accueil</a>
-        <a href="./Pages/Apropos.html">À propos</a>
-        <a href="./Pages/Catalogue.html">Catalogue</a>
-        <a href="./Pages/contact.html">Contact</a>
-      </div>
+      <nav class="footer-links" aria-label="Liens du pied de page">
+        <h2 class="footer-title">Navigation</h2>
+        <ul>
+          <li><a href="./index.html">Accueil</a></li>
+          <li><a href="./Pages/Apropos.html">À propos</a></li>
+          <li><a href="./Pages/Catalogue.html">Catalogue</a></li>
+          <li><a href="./Pages/contact.html">Contact</a></li>
+        </ul>
+      </nav>
       <div class="footer-social">
-        <h4>Nous suivre</h4>
+        <h2 class="footer-title">Nous suivre</h2>
         <div class="social-icons">
-          <a href="https://chat.whatsapp.com/CBqBLxDlNcEDeykTWFo2zk" class="soc wa" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-          <a href="#" class="soc fb"><i class="fa-brands fa-tiktok"></i></a>
-          <a href="#" class="soc ig"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://chat.whatsapp.com/CBqBLxDlNcEDeykTWFo2zk" class="soc wa" target="_blank" rel="noopener noreferrer" aria-label="Rejoindre le groupe WhatsApp Cake Spot"><svg class="icon icon-whatsapp" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a>
         </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 CakeSpot. Tous droits réservés.</p>
+      <p>© 2026 Cake Spot. Tous droits réservés.</p>
     </div>
   </footer>
 
-  <!-- CART PANEL -->
-  <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
-  <div class="cart-panel" id="cartPanel">
+  <dialog class="cart-panel" id="cartPanel" aria-labelledby="cartTitle">
     <div class="cart-header">
-      <h3><i class="fa-solid fa-bag-shopping"></i> Mon Panier</h3>
-      <button onclick="toggleCart()"><i class="fa-solid fa-xmark"></i></button>
+      <h2 id="cartTitle"><svg class="icon icon-bag-shopping" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64v48H160V112zm-48 48H48c-26.5 0-48 21.5-48 48V416c0 53 43 96 96 96H352c53 0 96-43 96-96V208c0-26.5-21.5-48-48-48H336V112C336 50.1 285.9 0 224 0S112 50.1 112 112v48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg> Mon panier <small id="cartSubtitle"></small></h2>
+      <button type="button" class="icon-btn" data-action="close-cart" aria-label="Fermer le panier"><svg class="icon icon-xmark" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg></button>
     </div>
-    <div class="cart-items" id="cartItems">
-      <div class="cart-empty">
-        <i class="fa-solid fa-cake-candles"></i>
-        <p>Votre panier est vide</p>
-        <a href="./Pages/Catalogue.html">Parcourir le catalogue</a>
+    <div class="cart-body" id="cartBody"></div>
+    <div class="cart-footer" id="cartFooter" hidden>
+      <div class="cart-summary">
+        <div><span>Articles</span><span id="cartSumCount">0</span></div>
+        <div hidden><span>Prix sur devis</span><span id="cartSumQuote"></span></div>
+        <div class="cart-total-row"><span>Total estimé</span><strong id="cartTotal">0 Frs</strong></div>
+      </div>
+      <details class="order-form" id="orderDetails" open>
+        <summary>Vos informations de commande</summary>
+        <form id="orderForm" class="order-fields" novalidate>
+          <div class="field">
+            <label for="orderName">Votre nom</label>
+            <input type="text" id="orderName" name="orderName" maxlength="80" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="orderDate">Date souhaitée</label>
+            <input type="date" id="orderDate" name="orderDate">
+          </div>
+          <fieldset class="field">
+            <legend>Mode de réception</legend>
+            <div class="segmented">
+              <label><input type="radio" name="orderMode" value="livraison" checked><span>Livraison</span></label>
+              <label><input type="radio" name="orderMode" value="retrait"><span>Retrait</span></label>
+            </div>
+          </fieldset>
+          <div class="field" id="orderAddressWrap">
+            <label for="orderAddress">Quartier / adresse de livraison</label>
+            <input type="text" id="orderAddress" name="orderAddress" maxlength="160" autocomplete="address-line1" placeholder="Ex : Bonamoussadi, près du carrefour…">
+          </div>
+        </form>
+      </details>
+      <p class="cart-note">Les prix exacts et les frais de livraison sont confirmés par Cake Spot.</p>
+      <div class="cart-actions">
+        <button type="button" class="btn-clear" data-action="clear-cart">Vider</button>
+        <button type="button" class="btn-whatsapp" data-action="send-whatsapp"><svg class="icon icon-whatsapp" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> Commander via WhatsApp</button>
       </div>
     </div>
-    <div class="cart-footer" id="cartFooter" style="display:none">
-      <div class="cart-total">
-        <span>Total estimé</span>
-        <strong id="cartTotal">0 Frs</strong>
-      </div>
-      <p class="cart-note">* Les prix exacts sont confirmés lors de la commande</p>
-      <button class="btn-whatsapp" onclick="sendToWhatsApp()">
-        <i class="fa-brands fa-whatsapp"></i> Commander via WhatsApp
-      </button>
-    </div>
-  </div>
+  </dialog>
 
-  <!-- TOAST -->
-  <div class="toast" id="toast"></div>
-
-  <script src="./JS/main.js"></script>
+  <div class="toast" id="toast"><span class="toast-text"></span><button type="button" class="toast-action" hidden>OK</button></div>
+  <p class="visually-hidden" id="srStatus" role="status" aria-live="polite"></p>
 </body>
 </html>

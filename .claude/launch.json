@@ -1,0 +1,41 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "cakespot",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "--yes",
+        "http-server@14.1.1",
+        "cakespot_new",
+        "-p",
+        "5173",
+        "-c-1"
+      ],
+      "port": 5173
+    },
+    {
+      "name": "cakespot-subpath",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": [
+        "--yes",
+        "http-server@14.1.1",
+        ".",
+        "-p",
+        "5174",
+        "-c-1"
+      ],
+      "port": 5174
+    },
+    {
+      "name": "cakespot-prod",
+      "runtimeExecutable": "node",
+      "runtimeArgs": [
+        "C:/Users/WENDEU/AppData/Local/Temp/claude/ad40bc33a72191e7/5ba72892-084f-4e97-8fc5-3e3ebedde878/scratchpad/prod_server.js",
+        "cakespot_new",
+        "5175"
+      ],
+      "port": 5175
+    }
+  ]
+}

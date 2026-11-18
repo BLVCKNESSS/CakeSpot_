@@ -1,323 +1,253 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Commander un gâteau | Contact Cake Spot</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../styles/main.css" />
-  <style>
-    .contact-page { padding-top: 0; }
-    .contact-hero {
-      position: relative;
-      height: 52vh; min-height: 340px;
-      display: flex; align-items: center; justify-content: center;
-      overflow: hidden;
-      margin-top: 72px;
-      text-align: center;
-    }
-    .contact-hero-bg {
-      position: absolute; inset: 0;
-    }
-    .contact-hero-bg img {
-      width: 100%; height: 100%;
-      object-fit: cover; object-position: center 40%;
-    }
-    .contact-hero-overlay {
-      position: absolute; inset: 0;
-      background: linear-gradient(to bottom, rgba(61,31,13,0.45) 0%, rgba(61,31,13,0.75) 100%);
-    }
-    .contact-hero-content {
-      position: relative; z-index: 2;
-      color: white;
-      padding: 2rem clamp(1.5rem,5vw,4rem);
-    }
-    .contact-hero-content .section-tag { color: var(--gold); }
-    .contact-hero-content h1 { color: white; margin: 0.5rem 0 1rem; font-size: clamp(2rem,5vw,3.5rem); }
-    .contact-hero-content p { color: rgba(255,255,255,0.82); max-width: 550px; margin: 0 auto 2rem; }
-
-    .contact-main {
-      display: grid; grid-template-columns: 1fr 1fr;
-      gap: 3rem; max-width: 1100px; margin: 0 auto;
-      padding: 4rem clamp(1.5rem,5vw,4rem);
-      align-items: start;
-    }
-    .contact-form-wrap h2 { color: var(--brown); margin-bottom: 0.5rem; }
-    .contact-form-wrap p { margin-bottom: 2rem; font-size: 0.92rem; }
-
-    .form-group { margin-bottom: 1.2rem; }
-    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-    .form-group label { display: block; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--text-light); margin-bottom: 6px; }
-    .form-group input, .form-group textarea, .form-group select {
-      width: 100%; padding: 12px 16px;
-      border: 1.5px solid rgba(0,0,0,0.1); border-radius: 12px;
-      font-family: 'DM Sans', sans-serif; font-size: 0.92rem;
-      color: var(--text); background: white; outline: none;
-      transition: border-color 0.2s;
-    }
-    .form-group input:focus, .form-group textarea:focus, .form-group select:focus {
-      border-color: var(--rose);
-    }
-    .form-group textarea { resize: vertical; min-height: 120px; }
-    .btn-send-form {
-      width: 100%; background: var(--rose); color: white;
-      border: none; border-radius: 50px; padding: 15px;
-      font-size: 1rem; font-weight: 700;
-      cursor: pointer; font-family: 'DM Sans', sans-serif;
-      transition: var(--transition);
-    }
-    .btn-send-form:hover { background: var(--rose-dark); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(232,146,124,0.4); }
-
-    .contact-info-wrap { display: flex; flex-direction: column; gap: 1.5rem; }
-    .contact-info-wrap img {
-      width: 100%; aspect-ratio: 4/3; object-fit: cover;
-      border-radius: var(--radius-lg); margin-bottom: 0.5rem;
-    }
-    .info-card {
-      background: white; border-radius: var(--radius);
-      padding: 1.2rem 1.5rem;
-      display: flex; gap: 1rem; align-items: flex-start;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
-    }
-    .info-card-icon {
-      width: 44px; height: 44px; border-radius: 12px;
-      background: var(--cream); display: flex; align-items: center; justify-content: center;
-      font-size: 1.2rem; flex-shrink: 0;
-    }
-    .info-card h4 { font-size: 0.88rem; font-weight: 600; color: var(--brown); margin-bottom: 4px; }
-    .info-card p { font-size: 0.85rem; color: var(--text-light); line-height: 1.5; }
-    .info-card a { color: var(--rose); }
-
-    .wa-cta {
-      background: linear-gradient(135deg, #25d366, #128c7e);
-      color: white; border-radius: var(--radius);
-      padding: 1.5rem; text-align: center;
-    }
-    .wa-cta i { font-size: 2rem; margin-bottom: 0.5rem; display: block; }
-    .wa-cta h4 { font-family: 'Playfair Display', serif; font-size: 1.1rem; margin-bottom: 0.5rem; }
-    .wa-cta p { font-size: 0.85rem; opacity: 0.85; margin-bottom: 1rem; }
-    .wa-cta a {
-      background: white; color: #25d366; font-weight: 700;
-      padding: 10px 24px; border-radius: 50px; font-size: 0.9rem;
-      display: inline-block; transition: var(--transition);
-    }
-    .wa-cta a:hover { transform: scale(1.05); }
-
-    .success-msg {
-      background: #d4edda; color: #155724;
-      border-radius: 12px; padding: 1rem 1.5rem;
-      margin-bottom: 1rem; display: none;
-      font-weight: 600;
-    }
-
-    @media (max-width: 800px) {
-      .contact-main { grid-template-columns: 1fr; gap: 2rem; }
-      .form-row { grid-template-columns: 1fr; }
-    }
-  </style>
-  <link rel="icon" type="image/png" href="../images/logo.png" />
-  <meta name="theme-color" content="#3d1f0d" />
-  <meta name="description" content="Contactez Cake Spot à Douala pour commander un gâteau sur mesure, demander un devis ou personnaliser une création pour votre événement." />
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Cake Spot" />
-  <meta property="og:title" content="Commander un gâteau sur mesure avec Cake Spot" />
-  <meta property="og:description" content="Contactez Cake Spot à Douala pour commander un gâteau sur mesure, demander un devis ou personnaliser une création pour votre événement." />
-  <meta property="og:image" content="../images/logo.png" />
-  <meta name="keywords" content="commander gâteau Douala, devis gâteau, gâteau sur mesure, pâtisserie Douala, Cake Spot WhatsApp" />
-  <meta name="robots" content="index, follow" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Commander un gâteau sur mesure avec Cake Spot" />
-  <meta name="twitter:description" content="Contactez Cake Spot à Douala pour commander un gâteau sur mesure, demander un devis ou personnaliser une création pour votre événement." />
-  <meta name="twitter:image" content="../images/logo.png" />
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Bakery","name":"Cake Spot","description":"Pâtisserie artisanale à Douala spécialisée dans les gâteaux sur mesure.","telephone":"+237686019392","address":{"@type":"PostalAddress","addressLocality":"Douala","addressCountry":"CM"},"areaServed":"Douala","servesCuisine":"Pâtisserie","priceRange":"FCFA"}</script>
+  <meta name="description" content="Contactez Cake Spot à Douala pour commander un gâteau sur mesure, demander un devis ou personnaliser une création pour votre événement.">
+  <link rel="canonical" href="https://cakespot-blue.vercel.app/Pages/contact.html">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#3d1f0d" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#16100c" media="(prefers-color-scheme: dark)">
+  <script src="../JS/theme.js"></script>
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <link rel="icon" type="image/png" sizes="48x48" href="../images/favicon-48.png">
+  <link rel="apple-touch-icon" href="../images/apple-touch-icon.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="preload" href="../fonts/dm-sans.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../fonts/playfair-display.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" as="image" href="../images/hero/image_contact1-640.webp" imagesrcset="../images/hero/image_contact1-640.webp 640w, ../images/hero/image_contact1-828.webp 828w, ../images/hero/image_contact1-1280.webp 970w" imagesizes="100vw" fetchpriority="high">
+  <link rel="stylesheet" href="../styles/main.css">
+  <link rel="stylesheet" href="../styles/pages.css">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Cake Spot">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:url" content="https://cakespot-blue.vercel.app/Pages/contact.html">
+  <meta property="og:title" content="Commander un gâteau sur mesure avec Cake Spot">
+  <meta property="og:description" content="Contactez Cake Spot à Douala pour commander un gâteau sur mesure, demander un devis ou personnaliser une création pour votre événement.">
+  <meta property="og:image" content="https://cakespot-blue.vercel.app/images/og-cakespot.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Gâteau artisanal Cake Spot à Douala">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Commander un gâteau sur mesure avec Cake Spot">
+  <meta name="twitter:description" content="Contactez Cake Spot à Douala pour commander un gâteau sur mesure, demander un devis ou personnaliser une création pour votre événement.">
+  <meta name="twitter:image" content="https://cakespot-blue.vercel.app/images/og-cakespot.jpg">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Bakery","@id":"https://cakespot-blue.vercel.app/#bakery","name":"Cake Spot","url":"https://cakespot-blue.vercel.app/","logo":"https://cakespot-blue.vercel.app/images/logo-512.png","image":["https://cakespot-blue.vercel.app/images/og-cakespot.jpg","https://cakespot-blue.vercel.app/images/optimized/etage10.webp","https://cakespot-blue.vercel.app/images/optimized/cake5.webp"],"description":"Pâtisserie artisanale à Douala spécialisée dans les gâteaux sur mesure : anniversaires, mariages, cakes, cupcakes et bento cakes.","telephone":"+237686019392","email":"CakeSpot22@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Douala","addressRegion":"Littoral","addressCountry":"CM"},"areaServed":{"@type":"City","name":"Douala"},"servesCuisine":"Pâtisserie","priceRange":"500 – 280 000 FCFA","currenciesAccepted":"XAF","sameAs":["https://chat.whatsapp.com/CBqBLxDlNcEDeykTWFo2zk"],"contactPoint":[{"@type":"ContactPoint","telephone":"+237686019392","contactType":"customer service","availableLanguage":["French","English"]}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Accueil","item":"https://cakespot-blue.vercel.app/"},{"@type":"ListItem","position":2,"name":"Contact","item":"https://cakespot-blue.vercel.app/Pages/contact.html"}]}</script>
+  <script src="../JS/icons.js" defer></script>
+  <script src="../JS/main.js" defer></script>
+  <script src="../JS/contact.js" defer></script>
 </head>
-<body class="contact-page">
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
   <header class="header" id="header">
-    <a href="../index.html" class="logo">
-      <img src="../images/logo.png" alt="Cake Spot" class="logo-image" /><span class="logo-wordmark">Cake<strong>Spot</strong></span>
+    <a href="../index.html" class="logo" aria-label="Cake Spot — accueil">
+      <img src="../images/logo.webp" alt="" class="logo-image" width="64" height="96"><span class="logo-wordmark">Cake<strong>Spot</strong></span>
     </a>
-    <nav class="nav-desktop">
+    <nav class="nav-desktop" aria-label="Navigation principale">
       <a href="../index.html" class="nav-link">Accueil</a>
-      <a href="./Apropos.html" class="nav-link">À propos</a>
-      <a href="./Catalogue.html" class="nav-link">Catalogue</a>
-      <a href="./contact.html" class="nav-link active">Contact</a>
+      <a href="../Pages/Apropos.html" class="nav-link">À propos</a>
+      <a href="../Pages/Catalogue.html" class="nav-link">Catalogue</a>
+      <a href="../Pages/contact.html" class="nav-link active" aria-current="page">Contact</a>
     </nav>
     <div class="header-actions">
-      <button class="cart-btn" onclick="toggleCart()">
-        <i class="fa-solid fa-bag-shopping"></i>
-        <span class="cart-count" id="cartCount">0</span>
+      <button type="button" class="theme-toggle" data-action="toggle-theme" aria-pressed="false" aria-label="Activer le thème sombre"><svg class="icon icon-moon" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><path d="M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"/></svg><svg class="icon icon-sun" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z"/></svg></button>
+      <button type="button" class="cart-btn" data-action="open-cart" aria-haspopup="dialog" aria-controls="cartPanel" aria-label="Ouvrir le panier">
+        <svg class="icon icon-bag-shopping" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64v48H160V112zm-48 48H48c-26.5 0-48 21.5-48 48V416c0 53 43 96 96 96H352c53 0 96-43 96-96V208c0-26.5-21.5-48-48-48H336V112C336 50.1 285.9 0 224 0S112 50.1 112 112v48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg>
+        <span class="cart-count" data-cart-count aria-hidden="true">0</span>
       </button>
-      <button class="menu-toggle" id="menuToggle">
+      <button type="button" class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-controls="mobileNav" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
-  <div class="mobile-nav" id="mobileNav">
+  <nav class="mobile-nav" id="mobileNav" aria-label="Navigation mobile">
     <a href="../index.html">Accueil</a>
-    <a href="./Apropos.html">À propos</a>
-    <a href="./Catalogue.html">Catalogue</a>
-    <a href="./contact.html">Contact</a>
-    <a href="https://wa.me/+237686019392" class="wa-link"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-  </div>
+    <a href="../Pages/Apropos.html">À propos</a>
+    <a href="../Pages/Catalogue.html">Catalogue</a>
+    <a href="../Pages/contact.html" aria-current="page">Contact</a>
+    <a href="https://wa.me/237686019392" class="wa-link"><svg class="icon icon-whatsapp" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> WhatsApp</a>
+  </nav>
 
-  <div class="contact-hero">
-    <div class="contact-hero-bg">
-      <img src="../images/optimized/image_contact1.webp" alt="Cake Spot Contact" />
-      <div class="contact-hero-overlay"></div>
-    </div>
-    <div class="contact-hero-content">
-      <p class="section-tag">Nous joindre</p>
-      <h1>Contactez-nous</h1>
-      <p>Une commande, une question ou un projet spécial ? Nous sommes là pour vous accompagner.</p>
-      <a href="https://wa.me/+237686019392?text=Bonjour Cake Spot, je souhaite vous contacter." class="btn-primary">
-        <i class="fa-brands fa-whatsapp"></i> Ouvrir WhatsApp
-      </a>
-    </div>
-  </div>
+  <main id="main">
+    <section class="page-hero" aria-labelledby="pageTitle">
+      <img src="../images/hero/image_contact1-640.webp" srcset="../images/hero/image_contact1-640.webp 640w, ../images/hero/image_contact1-828.webp 828w, ../images/hero/image_contact1-1280.webp 970w" sizes="100vw" width="970" height="1600" alt="Gâteaux Cake Spot prêts à être livrés" fetchpriority="high">
+      <div class="page-hero-overlay"></div>
+      <div class="page-hero-content">
+        <nav class="breadcrumb" aria-label="Fil d'Ariane"><ol><li><a href="../index.html">Accueil</a></li><li aria-current="page">Contact</li></ol></nav>
+        <p class="section-tag">Nous joindre</p>
+        <h1 id="pageTitle">Contactez-nous</h1>
+        <p>Une commande, une question ou un projet spécial ? Nous sommes là pour vous accompagner.</p>
+        <a href="https://wa.me/237686019392?text=Bonjour%20Cake%20Spot%2C%20je%20souhaite%20vous%20contacter." class="btn-wa"><svg class="icon icon-whatsapp" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> Ouvrir WhatsApp</a>
+      </div>
+    </section>
 
-  <div class="contact-main">
-    <div class="contact-form-wrap">
-      <p class="section-tag">Formulaire de contact</p>
-      <h2>Envoyez-nous un message</h2>
-      <p>Remplissez le formulaire ci-dessous et nous vous répondrons rapidement via WhatsApp ou email.</p>
-      <div class="success-msg" id="successMsg">✅ Message envoyé ! Nous vous répondrons bientôt.</div>
-      <div class="form-row">
-        <div class="form-group">
-          <label>Nom</label>
-          <input type="text" id="fname" placeholder="Votre nom" />
-        </div>
-        <div class="form-group">
-          <label>Prénom</label>
-          <input type="text" id="lname" placeholder="Votre prénom" />
-        </div>
+    <section class="contact-main" aria-label="Formulaire et coordonnées">
+      <div class="contact-form-wrap" data-reveal>
+        <p class="section-tag">Formulaire de contact</p>
+        <h2>Envoyez-nous un message</h2>
+        <p>Remplissez le formulaire : votre message s’ouvre dans WhatsApp, prêt à être envoyé.</p>
+        <form id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+            <label for="fname">Nom <span class="req" aria-hidden="true">*</span></label>
+            <input type="text" id="fname" name="fname" maxlength="60" autocomplete="family-name" required aria-describedby="fnameError">
+            <span class="field-error" id="fnameError"></span>
+          </div>
+            <div class="form-group">
+            <label for="lname">Prénom</label>
+            <input type="text" id="lname" name="lname" maxlength="60" autocomplete="given-name" aria-describedby="lnameError">
+            <span class="field-error" id="lnameError"></span>
+          </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+            <label for="phone">Téléphone</label>
+            <input type="tel" id="phone" name="phone" maxlength="20" inputmode="tel" autocomplete="tel" placeholder="6XX XXX XXX" aria-describedby="phoneError">
+            <span class="field-error" id="phoneError"></span>
+          </div>
+            <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" maxlength="120" autocomplete="email" placeholder="votre@email.com" aria-describedby="emailError">
+            <span class="field-error" id="emailError"></span>
+          </div>
+          </div>
+          <div class="form-group">
+            <label for="orderType">Type de commande</label>
+            <select id="orderType" name="orderType" aria-describedby="orderTypeError">
+              <option value="">— Sélectionnez —</option>
+              <option>Cupcakes</option>
+              <option>Cake (anniversaire, occasion…)</option>
+              <option>Gâteau de mariage</option>
+              <option>Bento cake</option>
+              <option>Création personnalisée</option>
+              <option>Simple renseignement</option>
+            </select>
+            <span class="field-error" id="orderTypeError"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message / détails <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" maxlength="1500" required aria-describedby="messageError" placeholder="Décrivez votre projet, la date souhaitée, le nombre de personnes…"></textarea>
+            <span class="field-error" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn-send-form"><svg class="icon icon-whatsapp" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> Envoyer via WhatsApp</button>
+          <p class="form-hint">Les champs marqués * sont obligatoires.</p>
+        </form>
       </div>
-      <div class="form-row">
-        <div class="form-group">
-          <label>Téléphone</label>
-          <input type="tel" id="phone" placeholder="6XX XXX XXX" />
-        </div>
-        <div class="form-group">
-          <label>Email</label>
-          <input type="email" id="email" placeholder="votre@email.com" />
-        </div>
-      </div>
-      <div class="form-group">
-        <label>Type de commande</label>
-        <select id="orderType">
-          <option value="">-- Sélectionnez --</option>
-          <option>Cupcakes</option>
-          <option>Cake (anniversaire, occasion…)</option>
-          <option>Gâteau de mariage</option>
-          <option>Génoise</option>
-          <option>Création personnalisée</option>
-          <option>Simple renseignement</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label>Message / Détails</label>
-        <textarea id="message" placeholder="Décrivez votre projet, la date souhaitée, le nombre de personnes…"></textarea>
-      </div>
-      <button class="btn-send-form" onclick="sendContact()">
-        <i class="fa-brands fa-whatsapp"></i> Envoyer via WhatsApp
-      </button>
-    </div>
 
-    <div class="contact-info-wrap">
-      <img src="../images/optimized/image_contact.webp" alt="Cake Spot" />
-      <div class="info-card">
-        <div class="info-card-icon">📞</div>
-        <div>
-          <h4>Appelez-nous</h4>
-          <p><a href="tel:+237686019392">+237 686 019 392</a><br/><a href="tel:+237699740930">+237 699 740 930</a></p>
+      <div class="contact-info-wrap">
+        <img src="../images/thumbs/image_contact.webp" srcset="../images/thumbs/image_contact.webp 480w, ../images/optimized/image_contact.webp 1000w" sizes="(max-width: 800px) 92vw, 460px" alt="Assortiment de pâtisseries Cake Spot" width="480" height="360" loading="lazy" decoding="async" data-reveal>
+        <div class="info-card" data-reveal>
+          <span class="info-card-icon"><svg class="icon icon-phone" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg></span>
+          <div>
+            <h3>Appelez-nous</h3>
+            <p><a href="tel:+237686019392">+237 686 019 392</a><br><a href="tel:+237699740930">+237 699 740 930</a></p>
+          </div>
+        </div>
+        <div class="info-card" data-reveal data-reveal-delay="1">
+          <span class="info-card-icon"><svg class="icon icon-envelope" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg></span>
+          <div>
+            <h3>Email</h3>
+            <p><a href="mailto:CakeSpot22@gmail.com">CakeSpot22@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="info-card" data-reveal data-reveal-delay="2">
+          <span class="info-card-icon"><svg class="icon icon-location-dot" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/></svg></span>
+          <div>
+            <h3>Localisation</h3>
+            <p>Douala, Cameroun<br>Livraison dans tout Douala</p>
+          </div>
+        </div>
+        <div class="wa-cta" data-reveal>
+          <svg class="icon icon-whatsapp" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg>
+          <h3>Commandez instantanément</h3>
+          <p>Notre WhatsApp est ouvert 7j/7 pour vos commandes et questions.</p>
+          <a href="https://wa.me/237686019392?text=Bonjour%20Cake%20Spot%20!">Ouvrir WhatsApp</a>
         </div>
       </div>
-      <div class="info-card">
-        <div class="info-card-icon">✉️</div>
-        <div>
-          <h4>Email</h4>
-          <p><a href="mailto:CakeSpot22@gmail.com">CakeSpot22@gmail.com</a></p>
-        </div>
-      </div>
-      <div class="info-card">
-        <div class="info-card-icon">📍</div>
-        <div>
-          <h4>Localisation</h4>
-          <p>Douala, Cameroun<br/>Livraison dans tout Douala</p>
-        </div>
-      </div>
-      <div class="wa-cta">
-        <i class="fa-brands fa-whatsapp"></i>
-        <h4>Commandez instantanément</h4>
-        <p>Notre canal WhatsApp est ouvert 7j/7 pour vos commandes et questions.</p>
-        <a href="https://wa.me/+237686019392?text=Bonjour Cake Spot !">Ouvrir WhatsApp</a>
-      </div>
-    </div>
-  </div>
+    </section>
+  </main>
 
   <footer class="footer">
     <div class="footer-inner">
       <div class="footer-brand">
-        <strong>CakeSpot</strong>
-        <p>Pâtisserie artisanale à Douala, Cameroun.</p>
+        <p class="footer-logo">Cake<span>Spot</span></p>
+        <p>Pâtisserie artisanale à Douala, Cameroun. Gâteaux sur mesure pour tous vos moments précieux.</p>
+        <p class="footer-contact">
+          <a href="tel:+237686019392">+237 686 019 392</a><br>
+          <a href="mailto:CakeSpot22@gmail.com">CakeSpot22@gmail.com</a>
+        </p>
       </div>
-      <div class="footer-links">
-        <h4>Navigation</h4>
-        <a href="../index.html">Accueil</a>
-        <a href="./Apropos.html">À propos</a>
-        <a href="./Catalogue.html">Catalogue</a>
-        <a href="./contact.html">Contact</a>
-      </div>
+      <nav class="footer-links" aria-label="Liens du pied de page">
+        <h2 class="footer-title">Navigation</h2>
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="../Pages/Apropos.html">À propos</a></li>
+          <li><a href="../Pages/Catalogue.html">Catalogue</a></li>
+          <li><a href="../Pages/contact.html">Contact</a></li>
+        </ul>
+      </nav>
       <div class="footer-social">
-        <h4>Nous suivre</h4>
+        <h2 class="footer-title">Nous suivre</h2>
         <div class="social-icons">
-          <a href="https://chat.whatsapp.com/CBqBLxDlNcEDeykTWFo2zk" class="soc wa" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-          <a href="#" class="soc fb"><i class="fa-brands fa-tiktok"></i></a>
-          <a href="#" class="soc ig"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://chat.whatsapp.com/CBqBLxDlNcEDeykTWFo2zk" class="soc wa" target="_blank" rel="noopener noreferrer" aria-label="Rejoindre le groupe WhatsApp Cake Spot"><svg class="icon icon-whatsapp" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></a>
         </div>
       </div>
     </div>
-    <div class="footer-bottom"><p>© 2025 CakeSpot. Tous droits réservés.</p></div>
+    <div class="footer-bottom">
+      <p>© 2026 Cake Spot. Tous droits réservés.</p>
+    </div>
   </footer>
 
-  <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
-  <div class="cart-panel" id="cartPanel">
+  <dialog class="cart-panel" id="cartPanel" aria-labelledby="cartTitle">
     <div class="cart-header">
-      <h3><i class="fa-solid fa-bag-shopping"></i> Mon Panier</h3>
-      <button onclick="toggleCart()"><i class="fa-solid fa-xmark"></i></button>
+      <h2 id="cartTitle"><svg class="icon icon-bag-shopping" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M160 112c0-35.3 28.7-64 64-64s64 28.7 64 64v48H160V112zm-48 48H48c-26.5 0-48 21.5-48 48V416c0 53 43 96 96 96H352c53 0 96-43 96-96V208c0-26.5-21.5-48-48-48H336V112C336 50.1 285.9 0 224 0S112 50.1 112 112v48zm24 48a24 24 0 1 1 0 48 24 24 0 1 1 0-48zm152 24a24 24 0 1 1 48 0 24 24 0 1 1 -48 0z"/></svg> Mon panier <small id="cartSubtitle"></small></h2>
+      <button type="button" class="icon-btn" data-action="close-cart" aria-label="Fermer le panier"><svg class="icon icon-xmark" viewBox="0 0 384 512" aria-hidden="true" focusable="false"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg></button>
     </div>
-    <div class="cart-items" id="cartItems"></div>
-    <div class="cart-footer" id="cartFooter" style="display:none">
-      <div class="cart-total">
-        <span>Total estimé</span>
-        <strong id="cartTotal">0 Frs</strong>
+    <div class="cart-body" id="cartBody"></div>
+    <div class="cart-footer" id="cartFooter" hidden>
+      <div class="cart-summary">
+        <div><span>Articles</span><span id="cartSumCount">0</span></div>
+        <div hidden><span>Prix sur devis</span><span id="cartSumQuote"></span></div>
+        <div class="cart-total-row"><span>Total estimé</span><strong id="cartTotal">0 Frs</strong></div>
       </div>
-      <p class="cart-note">* Les prix exacts sont confirmés lors de la commande</p>
-      <button class="btn-whatsapp" onclick="sendToWhatsApp()">
-        <i class="fa-brands fa-whatsapp"></i> Commander via WhatsApp
-      </button>
+      <details class="order-form" id="orderDetails" open>
+        <summary>Vos informations de commande</summary>
+        <form id="orderForm" class="order-fields" novalidate>
+          <div class="field">
+            <label for="orderName">Votre nom</label>
+            <input type="text" id="orderName" name="orderName" maxlength="80" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="orderDate">Date souhaitée</label>
+            <input type="date" id="orderDate" name="orderDate">
+          </div>
+          <fieldset class="field">
+            <legend>Mode de réception</legend>
+            <div class="segmented">
+              <label><input type="radio" name="orderMode" value="livraison" checked><span>Livraison</span></label>
+              <label><input type="radio" name="orderMode" value="retrait"><span>Retrait</span></label>
+            </div>
+          </fieldset>
+          <div class="field" id="orderAddressWrap">
+            <label for="orderAddress">Quartier / adresse de livraison</label>
+            <input type="text" id="orderAddress" name="orderAddress" maxlength="160" autocomplete="address-line1" placeholder="Ex : Bonamoussadi, près du carrefour…">
+          </div>
+        </form>
+      </details>
+      <p class="cart-note">Les prix exacts et les frais de livraison sont confirmés par Cake Spot.</p>
+      <div class="cart-actions">
+        <button type="button" class="btn-clear" data-action="clear-cart">Vider</button>
+        <button type="button" class="btn-whatsapp" data-action="send-whatsapp"><svg class="icon icon-whatsapp" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg> Commander via WhatsApp</button>
+      </div>
     </div>
-  </div>
-  <div class="toast" id="toast"></div>
+  </dialog>
 
-  <script src="../JS/main.js"></script>
-  <script>
-    function sendContact() {
-      const fname = document.getElementById('fname').value.trim();
-      const lname = document.getElementById('lname').value.trim();
-      const phone = document.getElementById('phone').value.trim();
-      const orderType = document.getElementById('orderType').value;
-      const message = document.getElementById('message').value.trim();
-      if (!fname && !message) { alert('Veuillez remplir au moins votre nom et votre message.'); return; }
-      let msg = `📩 *MESSAGE CAKE SPOT*\n\n`;
-      if (fname || lname) msg += `*Nom :* ${fname} ${lname}\n`;
-      if (phone) msg += `*Téléphone :* ${phone}\n`;
-      if (orderType) msg += `*Type de commande :* ${orderType}\n`;
-      if (message) msg += `\n*Message :*\n${message}`;
-      msg += `\n\nBonjour Cake Spot, j'attends votre réponse. Merci !`;
-      window.open(`https://wa.me/+237686019392?text=${encodeURIComponent(msg)}`, '_blank');
-    }
-  </script>
+  <div class="toast" id="toast"><span class="toast-text"></span><button type="button" class="toast-action" hidden>OK</button></div>
+  <p class="visually-hidden" id="srStatus" role="status" aria-live="polite"></p>
 </body>
 </html>

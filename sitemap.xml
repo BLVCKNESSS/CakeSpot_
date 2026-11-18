@@ -1,1 +1,120 @@
-<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>/</loc></url><url><loc>/Pages/Catalogue.html</loc></url><url><loc>/Pages/Apropos.html</loc></url><url><loc>/Pages/contact.html</loc></url></urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://cakespot-blue.vercel.app/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/bento-cake-fleuri.webp</image:loc></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cupcake3.webp</image:loc></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake5.webp</image:loc></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/gateau-anniversaire-personnalise-3.webp</image:loc></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/etage10.webp</image:loc></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/bento-cake-premium.webp</image:loc></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/image_commentaire.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://cakespot-blue.vercel.app/Pages/Catalogue.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/bento-cake-saint-valentin.webp</image:loc></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cupcake1.webp</image:loc><image:title>Cupcake Classique</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cupcake7.webp</image:loc><image:title>Cupcake Prestige</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cupcake3.webp</image:loc><image:title>Cupcake Fleuri</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cupcake4.webp</image:loc><image:title>Cupcake Tropical</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cupcake5.webp</image:loc><image:title>Cupcake Chocolat</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/gateau-anniversaire-coco-et-chocolat.webp</image:loc><image:title>Gâteau Anniversaire Coco &amp; Chocolat</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake1.webp</image:loc><image:title>Cake Fondant</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake2.webp</image:loc><image:title>Cake Premium</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake3.webp</image:loc><image:title>Cake Spécial</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake4.webp</image:loc><image:title>Cake Élégant</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake5.webp</image:loc><image:title>Cake chocolat</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake7.webp</image:loc><image:title>Cake Marbré</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake8.webp</image:loc><image:title>Cake choco brut</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake9.webp</image:loc><image:title>Cake Chocolat Intense</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake10.webp</image:loc><image:title>Cake Noix de Coco</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake11.webp</image:loc><image:title>Cake Fraise &amp; Crème</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake12.webp</image:loc><image:title>Cake Caramel Noisette</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake-chocolat-drip-oreo.webp</image:loc><image:title>Cake Chocolat Drip Oreo</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake-drip-oreo-et-vanille.webp</image:loc><image:title>Cake Drip Oreo &amp; Vanille</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake-choco-total.webp</image:loc><image:title>Cake Choco Total</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake-drip-blanc-et-chocolat.webp</image:loc><image:title>Cake Drip Blanc &amp; Chocolat</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake-bicolore-choco-vanille.webp</image:loc><image:title>Cake Bicolore Choco-Vanille</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake-drip-coco-et-chocolat.webp</image:loc><image:title>Cake Drip Coco &amp; Chocolat</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake-chocolat-drip-or.webp</image:loc><image:title>Cake Chocolat Drip Or</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake-chocolat-drip-festif.webp</image:loc><image:title>Cake Chocolat Drip Festif</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake-cafe-dark.webp</image:loc><image:title>Cake Café Dark</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake-choco-oreo-elabore.webp</image:loc><image:title>Cake Choco Oreo Élaboré</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake-anniversaire-festif-bleu.webp</image:loc><image:title>Cake Anniversaire Festif Bleu</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake-anniversaire-festif.webp</image:loc><image:title>Cake Anniversaire Festif</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake-enfant-paw-patrol-bleu.webp</image:loc><image:title>Cake Enfant Paw Patrol Bleu</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake-enfant-paw-patrol-rose.webp</image:loc><image:title>Cake Enfant Paw Patrol Rose</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake-enfant-paw-patrol-rond.webp</image:loc><image:title>Cake Enfant Paw Patrol Rond</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake-paw-patrol-tower.webp</image:loc><image:title>Cake Paw Patrol Tower</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake-anniversaire-bleu-royal.webp</image:loc><image:title>Cake Anniversaire Bleu Royal</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake-fleurette-chocolat.webp</image:loc><image:title>Cake Fleurette Chocolat</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake-oreo-anniversaire.webp</image:loc><image:title>Cake Oreo Anniversaire</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/img_2.webp</image:loc><image:title>Cake Anniversaire Chic</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake-anniversaire-rose.webp</image:loc><image:title>Cake Anniversaire Rose</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/etage1.webp</image:loc><image:title>Gâteau de Mariage Classique</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/etage2.webp</image:loc><image:title>Gâteau de Mariage Fleuri</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/etage3.webp</image:loc><image:title>Gâteau de Mariage Prestige</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/etage5.webp</image:loc><image:title>Gâteau de Mariage Romantique</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/etage6.webp</image:loc><image:title>Gâteau de Mariage Minimaliste</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/etage8.webp</image:loc><image:title>Gâteau de Mariage Bohème</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/etage9.webp</image:loc><image:title>Gâteau de Mariage Doré</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/etage10.webp</image:loc><image:title>Gâteau de Mariage Perles &amp; Roses</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/bento-cake-premium.webp</image:loc><image:title>Bento Cake prémium</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/bento-cake-prestige.webp</image:loc><image:title>Bento Cake Prestige</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/bento-cake-fleuri.webp</image:loc><image:title>Bento Cake Fleuri</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/bento-cake-fantasy.webp</image:loc><image:title>Bento Cake fantasy</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake-noir-et-blanc.webp</image:loc><image:title>Cake Noir &amp; Blanc</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/gateau-anniversaire-personnalise-2.webp</image:loc><image:title>Gâteau Anniversaire Personnalisé 2</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/gateau-anniversaire-personnalise-3.webp</image:loc><image:title>Gâteau Anniversaire Personnalisé 3</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake-drip-blanc-et-chocolat-new4.webp</image:loc><image:title>Cake Drip Blanc &amp; Chocolat</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/gateau-anniversaire-personnalise-5.webp</image:loc><image:title>Gâteau Anniversaire Personnalisé 5</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/donuts-gourmands.webp</image:loc><image:title>Donuts Gourmands</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake-vertical-fleuri.webp</image:loc><image:title>Cake Vertical Fleuri</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake-lettre-personnalise.webp</image:loc><image:title>Cake Lettre Personnalisé</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake-chocolat-drip.webp</image:loc><image:title>Cake Chocolat Drip</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake-rosettes-chocolat.webp</image:loc><image:title>Cake Rosettes Chocolat</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/gateau-anniversaire-personnalise-11.webp</image:loc><image:title>Gâteau Anniversaire Personnalisé 11</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/gateau-anniversaire-personnalise-12.webp</image:loc><image:title>Gâteau Anniversaire Personnalisé 12</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/gateau-anniversaire-personnalise-13.webp</image:loc><image:title>Gâteau Anniversaire Personnalisé 13</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/gateau-anniversaire-personnalise-14.webp</image:loc><image:title>Gâteau Anniversaire Personnalisé 14</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/gateau-anniversaire-personnalise-15.webp</image:loc><image:title>Gâteau Anniversaire Personnalisé 15</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/gateau-anniversaire-personnalise-16.webp</image:loc><image:title>Gâteau Anniversaire Personnalisé 16</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/gateau-anniversaire-personnalise-17.webp</image:loc><image:title>Gâteau Anniversaire Personnalisé 17</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/gateau-anniversaire-personnalise-18.webp</image:loc><image:title>Gâteau Anniversaire Personnalisé 18</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/gateau-anniversaire-personnalise-19.webp</image:loc><image:title>Gâteau Anniversaire Personnalisé 19</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/gateau-anniversaire-personnalise-20.webp</image:loc><image:title>Gâteau Anniversaire Personnalisé 20</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/gateau-anniversaire-personnalise-21.webp</image:loc><image:title>Gâteau Anniversaire Personnalisé 21</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake-chocolat-premium.webp</image:loc><image:title>Cake Chocolat Premium</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/gateau-anniversaire-personnalise-23.webp</image:loc><image:title>Gâteau Anniversaire Personnalisé 23</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/gateau-anniversaire-personnalise-24.webp</image:loc><image:title>Gâteau Anniversaire Personnalisé 24</image:title></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/gateau-anniversaire-personnalise-1.webp</image:loc><image:title>Gâteau Anniversaire Personnalisé 1</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://cakespot-blue.vercel.app/Pages/Apropos.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/bento-cake-premium.webp</image:loc></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/image_apropos.webp</image:loc></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/etage10.webp</image:loc></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cupcake7.webp</image:loc></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake-enfant-paw-patrol-rose.webp</image:loc></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake-choco-total.webp</image:loc></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake8.webp</image:loc></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/cake-drip-oreo-et-vanille.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://cakespot-blue.vercel.app/Pages/contact.html</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/image_contact1.webp</image:loc></image:image>
+    <image:image><image:loc>https://cakespot-blue.vercel.app/images/optimized/image_contact.webp</image:loc></image:image>
+  </url>
+</urlset>

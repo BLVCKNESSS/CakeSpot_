@@ -1,0 +1,5 @@
+# Fichiers internes à ne pas publier
+INTEGRATION_MANAGER.md
+TEST_REPORT.md
+app.config.ts
+.claude
