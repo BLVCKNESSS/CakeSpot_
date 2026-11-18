@@ -1,2 +1,2 @@
-// Configuration locale : le catalogue public lit les produits du Manager local.
-window.CAKESPOT_MANAGER_API_URL = 'http://localhost:3000';
+// Pas d'API Manager en production — le catalogue utilise les données locales
+window.CAKESPOT_MANAGER_API_URL = '';
